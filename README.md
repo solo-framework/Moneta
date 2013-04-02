@@ -1,4 +1,4 @@
-Moneta
+Moneta Web Service
 ======
 
 PHP библиотека для доступа к методам веб-сервиса MONETA.MerchantAPI (http://moneta.ru)
