@@ -14,7 +14,7 @@
     },
 	
 	"autoload" : {
-		"psr-0": { "": "src/" },
+		"psr-0": { "Moneta": "src/" },
 		"files": ["src/Moneta/MonetaDataTypes.php"]
 	}
 }
