@@ -11,7 +11,7 @@ PHP библиотека для доступа к методам веб-серв
 
 require_once "./vendor/autoload.php";
 
-$service = new Moneta\Types\MonetaWebService("https://demo.moneta.ru/services.wsdl", "username", "password");
+$service = new Moneta\MonetaWebService("https://demo.moneta.ru/services.wsdl", "username", "password");
 // получить данные счета
 $response = $service->FindAccountById(25182459);
 
@@ -23,7 +23,7 @@ try
 {
 	// перевод
 
-	$mtr = new Moneta\TransferRequest(); 
+	$mtr = new Moneta\Types\TransferRequest(); 
 	$mtr->amount = 10;
 	$mtr->isPayerAmount = true;
 	$mtr->payee = 10659151;
