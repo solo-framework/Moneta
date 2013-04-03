@@ -5,7 +5,7 @@
 // see https://solo-framework-lib.googlecode.com 
 // Timestamp: 1364823780 
 
-namespace Moneta;
+namespace Moneta\Types;
 
 
 /**

@@ -23,7 +23,7 @@ try
 {
 	// перевод
 
-	$mtr = new Moneta\TransferRequest(); 
+	$mtr = new Moneta\Types\TransferRequest(); 
 	$mtr->amount = 10;
 	$mtr->isPayerAmount = true;
 	$mtr->payee = 10659151;
