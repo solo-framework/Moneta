@@ -1,6 +1,6 @@
 {
     "name": "moneta/webservice",	
-    "description": "PHP library for access to MONETA.MerchantAPI (http://moneta.ru)",
+    "description": "PHP library for access to MONETA.MerchantAPI (http://moneta.ru), psr-0 coding standard",
 	"keywords": ["moneta.ru", "Merchant.API", "Payment service"],
     "license": "MIT",
     "authors": [
@@ -14,7 +14,6 @@
     },
 	
 	"autoload" : {
-		"psr-0": { "Moneta": "src/" },
-		"files": ["src/Moneta/MonetaDataTypes.php"]
+		"psr-0": { "Moneta": "src/" }		
 	}
 }
