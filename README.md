@@ -11,18 +11,18 @@ PHP библиотека для доступа к методам веб-серв
 
 require_once "./vendor/autoload.php";
 
-$service = new Moneta\MonetaWebService("https://demo.moneta.ru/services.wsdl", "username", "password");
-// получить данные счета
-$response = $service->FindAccountById(25182459);
-
-echo "Current balance:\n";
-echo "balance: {$response->account->availableBalance}\n";
-echo "currency: {$response->account->currency}\n\n";
-
 try
 {
+	// подключение к сервису
+	$service = new Moneta\MonetaWebService("https://demo.moneta.ru/services.wsdl", "username", "password");
+	// получить данные счета
+	$response = $service->FindAccountById(25182459);
+	
+	echo "Current balance:\n";
+	echo "balance: {$response->account->availableBalance}\n";
+	echo "currency: {$response->account->currency}\n\n";
+	
 	// перевод
-
 	$mtr = new Moneta\Types\TransferRequest(); 
 	$mtr->amount = 10;
 	$mtr->isPayerAmount = true;
