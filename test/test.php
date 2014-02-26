@@ -1,13 +1,6 @@
-Moneta Web Service
-======
-
-PHP библиотека для доступа к методам веб-сервиса MONETA.MerchantAPI (http://moneta.ru)
-
-Пример использования
-====
-
-```php
 <?php
+
+//require_once "./vendor/autoload.php";
 
 require_once "/../src/Moneta/MonetaDataTypes.php";
 require_once "/../src/Moneta/MonetaWebServiceConnector.php";
@@ -17,7 +10,7 @@ require_once "/../src/Moneta/MonetaWebService.php";
 try
 {
 	// подключение к сервису
-	$service = new Moneta\MonetaWebService("https://demo.moneta.ru/services.wsdl", "username", "password");
+	$service = new Moneta\MonetaWebService("https://demo.moneta.ru/services.wsdl", "buyzilla.demo@gmail.com", "buy245fdh");
 	// получить данные счета
 	$response = $service->FindAccountById(25182459);
 
@@ -55,5 +48,3 @@ catch (Exception $e)
 	echo $e->getTraceAsString();
 }
 ?>
-
-```
