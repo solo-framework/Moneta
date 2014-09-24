@@ -16,6 +16,13 @@ class MonetaWebService extends MonetaWebServiceConnector
 {
 
 	/**
+	 * Версия API
+	 *
+	 * @var string
+	 */
+	public $version = "VERSION_2";
+
+	/**
 	 * Конструктор
 	 *
 	 * @param string $wsdl путь к файлу описания методов Moneta.MerchantAPI
@@ -85,5 +92,22 @@ class MonetaWebService extends MonetaWebServiceConnector
 		return new \SoapHeader($sns, 'Security', $secHeaderValue, true);
 	}
 
+
+	/**
+	 * Call method of web-service
+	 *
+	 * @param string $method Method name
+	 * @param mixed $data Data
+	 * @param mixed $options Options corresponding like SoapClient->__soapCall()
+	 *
+	 * @return mixed
+	 */
+	protected function call($method, $data, $options = null)
+	{
+		// этот костыль для установки версии API (нужен рефакторинг метода call)
+		if (is_object($data[0]))
+			$data[0]->version = $this->version;
+		return $this->client->__soapCall($method, $data, $options, $this->inputHeaders, $this->outputHeaders);
+	}
 }
 ?>
