@@ -110,4 +110,3 @@ class MonetaWebService extends MonetaWebServiceConnector
 		return $this->client->__soapCall($method, $data, $options, $this->inputHeaders, $this->outputHeaders);
 	}
 }
-?>

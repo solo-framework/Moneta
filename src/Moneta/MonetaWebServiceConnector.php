@@ -68,9 +68,9 @@ class MonetaWebServiceConnector
 	}
 
 	// Block of generated methods
-	
+
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\AuthoriseTransactionBatchRequest $request
 	 *
@@ -83,7 +83,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param string $request
 	 *
@@ -96,7 +96,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\ForecastTransactionRequest $request
 	 *
@@ -109,7 +109,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\TransferBatchRequest $request
 	 *
@@ -122,7 +122,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\CreateProfileDocumentRequest $request
 	 *
@@ -135,7 +135,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\GetTurnoverListRequest $request
 	 *
@@ -148,7 +148,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\PaymentRequest $request
 	 *
@@ -161,7 +161,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\ConfirmTransactionBatchRequest $request
 	 *
@@ -174,7 +174,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\SaveAccountRelationRequest $request
 	 *
@@ -187,7 +187,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindProfileDocumentFilesRequest $request
 	 *
@@ -200,7 +200,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\AuthoriseTransactionRequest $request
 	 *
@@ -213,7 +213,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\VerifyTransferRequest $request
 	 *
@@ -226,7 +226,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\CancelTransactionBatchRequest $request
 	 *
@@ -239,7 +239,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\ConfirmTransactionRequest $request
 	 *
@@ -252,7 +252,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindAccountsListRequest $request
 	 *
@@ -265,7 +265,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindAccountRelationsRequest $request
 	 *
@@ -278,7 +278,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindProfileDocumentsRequest $request
 	 *
@@ -291,7 +291,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindOperationsListRequest $request
 	 *
@@ -304,7 +304,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\VerifyTransactionRequest $request
 	 *
@@ -317,7 +317,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\GetFinancialFlowsListRequest $request
 	 *
@@ -330,7 +330,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindLegalInformationRequest $request
 	 *
@@ -343,7 +343,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\GetAccountRelationRequest $request
 	 *
@@ -356,7 +356,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\CreateAccountRequest $request
 	 *
@@ -369,7 +369,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\GetProfileInfoRequest $request
 	 *
@@ -382,7 +382,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param long $request
 	 *
@@ -395,7 +395,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\DeleteAccountRelationRequest $request
 	 *
@@ -408,7 +408,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindLastOperationsListRequest $request
 	 *
@@ -421,7 +421,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\CreateProfileRequest $request
 	 *
@@ -434,7 +434,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\EditProfileRequest $request
 	 *
@@ -447,7 +447,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\VerifyPaymentRequest $request
 	 *
@@ -460,7 +460,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\InvoiceRequest $request
 	 *
@@ -473,7 +473,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\EditAccountRequest $request
 	 *
@@ -486,7 +486,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindBankAccountsRequest $request
 	 *
@@ -499,7 +499,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindOperationsListByCTIDRequest $request
 	 *
@@ -512,7 +512,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\TransferRequest $request
 	 *
@@ -525,7 +525,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\UploadProfileDocumentFileRequest $request
 	 *
@@ -538,7 +538,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\GetAccountPaymentPasswordChallengeRequest $request
 	 *
@@ -551,7 +551,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindContractsRequest $request
 	 *
@@ -564,7 +564,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\PaymentBatchRequest $request
 	 *
@@ -577,7 +577,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\InvoiceBatchRequest $request
 	 *
@@ -590,7 +590,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\FindProfileInfoRequest $request
 	 *
@@ -603,7 +603,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\CancelTransactionRequest $request
 	 *
@@ -616,7 +616,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param long $request
 	 *
@@ -629,7 +629,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\RefundRequest $request
 	 *
@@ -642,7 +642,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param \Moneta\Types\EditProfileDocumentRequest $request
 	 *
@@ -655,7 +655,7 @@ class MonetaWebServiceConnector
 	}
 
 	/**
-	 * 
+	 *
 	 *
 	 * @param long $request
 	 *
@@ -707,4 +707,3 @@ class MonetaWebServiceConnector
 		return $this->client->__soapCall($method, $data, $options, $this->inputHeaders, $this->outputHeaders);
 	}
 }
-?>
