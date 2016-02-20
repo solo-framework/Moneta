@@ -3,30 +3,49 @@ Moneta Web Service
 
 PHP библиотека для доступа к методам веб-сервиса MONETA.MerchantAPI (http://moneta.ru)
 
+Версии
+====
+
+Версия 20054 от 24 сентября 2014 г.
+```
+
+{
+	"require": {
+		"moneta/webservice": "v20054"
+	}
+}
+
+```
+
+Версия 24076 от 16 февраля 2016 г.
+```
+
+{
+	"require": {
+		"moneta/webservice": "v24076"
+	}
+}
+
+```
+
 Пример использования
 ====
 
 ```php
-<?php
+require_once "../vendor/autoload.php";
 
-require_once "/../src/Moneta/MonetaDataTypes.php";
-require_once "/../src/Moneta/MonetaWebServiceConnector.php";
-require_once "/../src/Moneta/MonetaWebService.php";
+$service = new Moneta\MonetaWebService("https://demo.moneta.ru/services.wsdl", "username", "password");
+// получить данные счета
+$response = $service->FindAccountById(25182459);
 
+echo "Current balance:\n";
+echo "balance: {$response->account->availableBalance}\n";
+echo "currency: {$response->account->currency}\n\n";
 
 try
 {
-	// подключение к сервису
-	$service = new Moneta\MonetaWebService("https://demo.moneta.ru/services.wsdl", "username", "password");
-	// получить данные счета
-	$response = $service->FindAccountById(25182459);
-
-	echo "Current balance:\n";
-	echo "balance: {$response->account->availableBalance}\n";
-	echo "currency: {$response->account->currency}\n\n";
-
-	echo "I'm going to transfer some money to another account:\n";
 	// перевод
+
 	$mtr = new Moneta\Types\TransferRequest();
 	$mtr->amount = 1;
 	$mtr->isPayerAmount = true;
@@ -34,6 +53,7 @@ try
 	$mtr->payer = 25182459;
 	$mtr->paymentPassword = "2347585";
 
+	echo "I'm going to transfer 1 RUR to another account:\n";
 	$trt = $service->Transfer($mtr);
 
 	// данные транзакции
@@ -54,6 +74,4 @@ catch (Exception $e)
 	echo $e->getMessage();
 	echo $e->getTraceAsString();
 }
-?>
-
 ```
