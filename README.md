@@ -3,6 +3,31 @@ Moneta Web Service
 
 PHP библиотека для доступа к методам веб-сервиса MONETA.MerchantAPI (http://moneta.ru)
 
+Версии
+====
+
+Версия 20054 от 24 сентября 2014 г.
+```
+
+{
+	"require": {
+		"moneta/webservice": "v20054"
+	}
+}
+
+```
+
+Версия 24076 от 16 февраля 2016 г.
+```
+
+{
+	"require": {
+		"moneta/webservice": "v24076"
+	}
+}
+
+```
+
 Пример использования
 ====
 
