@@ -7,8 +7,8 @@
 namespace Moneta\Types;
 
 /**
- * Результат информации об платежной системе.
-	 * Response information about payment system
+ * Ответ, который приходит на запрос PaymentSystemInfoRequest.
+	 * Response to a request PaymentSystemInfoRequest.
 	 * 
  */
 class PaymentSystemInfoResponse

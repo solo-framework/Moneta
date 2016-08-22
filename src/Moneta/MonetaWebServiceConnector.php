@@ -305,6 +305,32 @@ class MonetaWebServiceConnector
 	/**
 	 * 
 	 *
+	 * @param \Moneta\Types\VerifyPaymentBatchRequest $request
+	 *
+	 * @return \Moneta\Types\VerifyPaymentBatchResponse
+	 */
+	public function VerifyPaymentBatch(\Moneta\Types\VerifyPaymentBatchRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
+	 * @param \Moneta\Types\AccountStatementRequest $request
+	 *
+	 * @return \Moneta\Types\AccountStatementResponse
+	 */
+	public function AccountStatement(\Moneta\Types\AccountStatementRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
 	 * @param long $request
 	 *
 	 * @return \Moneta\Types\FindAccountByIdResponse
@@ -487,6 +513,19 @@ class MonetaWebServiceConnector
 	/**
 	 * 
 	 *
+	 * @param \Moneta\Types\CheckProfileRequest $request
+	 *
+	 * @return \Moneta\Types\CheckProfileResponse
+	 */
+	public function CheckProfile(\Moneta\Types\CheckProfileRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
 	 * @param \Moneta\Types\EditProfileRequest $request
 	 *
 	 * @return \Moneta\Types\EditProfileResponse
@@ -656,6 +695,19 @@ class MonetaWebServiceConnector
 	/**
 	 * 
 	 *
+	 * @param \Moneta\Types\FindReportsRequest $request
+	 *
+	 * @return \Moneta\Types\FindReportsResponse
+	 */
+	public function FindReports(\Moneta\Types\FindReportsRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
 	 * @param \Moneta\Types\FindAccountRelationsRequest $request
 	 *
 	 * @return \Moneta\Types\FindAccountRelationsResponse
@@ -778,6 +830,32 @@ class MonetaWebServiceConnector
 	 * @return \Moneta\Types\SecureDataResponse
 	 */
 	public function SecureData(\Moneta\Types\SecureDataRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
+	 * @param \Moneta\Types\LoginRequest $request
+	 *
+	 * @return \Moneta\Types\LoginResponse
+	 */
+	public function Login(\Moneta\Types\LoginRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
+	 * @param \Moneta\Types\LogoutRequest $request
+	 *
+	 * @return \Moneta\Types\LogoutResponse
+	 */
+	public function Logout(\Moneta\Types\LogoutRequest $request)
 	{
 		$request = array($request);
 		return $this->call(__FUNCTION__, $request);

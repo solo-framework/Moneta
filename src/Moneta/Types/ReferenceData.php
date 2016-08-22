@@ -7,14 +7,16 @@
 namespace Moneta\Types;
 
 /**
- * Справочная информация
-	 * Reference Info
+ * Справочная информация о платежной системе.
+	 * Reference information.
 	 * 
  */
 class ReferenceData
 {
 	
 	/**
+	 * Срок проведения банковской операции.
+	 * The term of carrying out banking transactions.
 	 * 
 	 *
 	 * @var string
@@ -22,6 +24,8 @@ class ReferenceData
 	 public $period = null;
 
 	/**
+	 * Комиссия в процентах.
+	 * The сommission, in percent.
 	 * 
 	 *
 	 * @var string
@@ -29,6 +33,8 @@ class ReferenceData
 	 public $percentage = null;
 
 	/**
+	 * Внешняя комиссия в процентах.
+	 * The external сommission, in percent.
 	 * 
 	 *
 	 * @var string
@@ -36,6 +42,8 @@ class ReferenceData
 	 public $percentageExt = null;
 
 	/**
+	 * Комиcсия с плательщика (сумма).
+	 * The commission payeer (amount).
 	 * 
 	 *
 	 * @var decimal
@@ -43,6 +51,8 @@ class ReferenceData
 	 public $sourceFee = null;
 
 	/**
+	 * Внешняя комиcсия с плательщика (сумма).
+	 * External commission from the payer (amount).
 	 * 
 	 *
 	 * @var decimal
@@ -50,6 +60,8 @@ class ReferenceData
 	 public $sourceFeeExt = null;
 
 	/**
+	 * Комиcсия с получателя платежа (сумма).
+	 * Commission to the payee (amount).
 	 * 
 	 *
 	 * @var decimal
@@ -57,17 +69,12 @@ class ReferenceData
 	 public $targetFee = null;
 
 	/**
+	 * Внешняя комиcсия с получателя платежа (сумма).
+	 * External сommission to the payee (amount).
 	 * 
 	 *
 	 * @var decimal
 	 */
 	 public $targetFeeExt = null;
-
-	/**
-	 * 
-	 *
-	 * @var string
-	 */
-	 public $alias = null;
 
 }

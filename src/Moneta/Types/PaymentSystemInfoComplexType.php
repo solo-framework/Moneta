@@ -7,14 +7,16 @@
 namespace Moneta\Types;
 
 /**
- * Информация о платежной системе
-	 * Payment system info
+ * Тип, описывающий представления информации о платежной системе.
+	 * Type of present information of payment system
 	 * 
  */
 class PaymentSystemInfoComplexType
 {
 	
 	/**
+	 * ID пользователя в системе МОНЕТА.РУ.
+	 * Unique identifier of the user in MONETA.RU.
 	 * 
 	 *
 	 * @var long
@@ -22,6 +24,8 @@ class PaymentSystemInfoComplexType
 	 public $unitId = null;
 
 	/**
+	 * Наименование платежной системы.
+	 * The name of payment system.
 	 * 
 	 *
 	 * @var string
@@ -29,6 +33,8 @@ class PaymentSystemInfoComplexType
 	 public $name = null;
 
 	/**
+	 * URL логотипа платежной системы.
+	 * The URL of icon of the payment system.
 	 * 
 	 *
 	 * @var string
@@ -36,13 +42,17 @@ class PaymentSystemInfoComplexType
 	 public $icon = null;
 
 	/**
+	 * Наименование логической группы, к которой принадлежит платежная система.
+	 * The name of logical group of the payment system.
 	 * 
 	 *
-	 * @var int
+	 * @var string
 	 */
 	 public $logicalGroup = null;
 
 	/**
+	 * Расширенная информация об URL платежной системы.
+	 * Fully information about URL of the payment system.
 	 * 
 	 *
 	 * @var InfoUrl
@@ -50,6 +60,8 @@ class PaymentSystemInfoComplexType
 	 public $infoUrl = null;
 
 	/**
+	 * Справочная информация о платежной системе.
+	 * Reference information.
 	 * 
 	 *
 	 * @var ReferenceData
@@ -57,6 +69,8 @@ class PaymentSystemInfoComplexType
 	 public $referenceData = null;
 
 	/**
+	 * Краткая информация о тарифе.
+	 * Short information on tariff.
 	 * 
 	 *
 	 * @var InfoTariff
@@ -64,6 +78,8 @@ class PaymentSystemInfoComplexType
 	 public $infoTariff = null;
 
 	/**
+	 * Список валюты счетов платежной системы. Располагаются в том же порядке, что и идентификаторы счетов в psAccountIds.
+	 * List of currency payment system accounts. Are located in the same order, as well as accounts in psAccountIds are.
 	 * 
 	 *
 	 * @var string
@@ -71,24 +87,12 @@ class PaymentSystemInfoComplexType
 	 public $currencies = null;
 
 	/**
+	 * Список счетов платежной системы. Располагаются в том же порядке, что и валюты счетов в currencies.
+	 * List of payment system accounts. Are located in the same order, as well as accounts currencies in currencies are.
 	 * 
 	 *
 	 * @var string
 	 */
-	 public $key = null;
-
-	/**
-	 * 
-	 *
-	 * @var string
-	 */
-	 public $alias = null;
-
-	/**
-	 * 
-	 *
-	 * @var string
-	 */
-	 public $groupAlias = null;
+	 public $psAccountIds = null;
 
 }

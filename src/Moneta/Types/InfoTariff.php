@@ -8,13 +8,15 @@ namespace Moneta\Types;
 
 /**
  * Информация о тарифе
-	 * Tariff Info
+	 * Information on tariff
 	 * 
  */
 class InfoTariff
 {
 	
 	/**
+	 * Валюта счета плательщика для которого расчитывается лимит суммы операции.
+	 * The payer's account currency for which the calculated limit of the transaction amount.
 	 * 
 	 *
 	 * @var string
@@ -22,6 +24,8 @@ class InfoTariff
 	 public $sourceRangeCurrency = null;
 
 	/**
+	 * Минимальная сумма для плательщика, допустимая в операции.
+	 * The minimum amount to the payer that is permitted in operation.
 	 * 
 	 *
 	 * @var decimal
@@ -29,6 +33,8 @@ class InfoTariff
 	 public $sourceAmountMin = null;
 
 	/**
+	 * Максимальная сумма для плательщика, допустимая в операции.
+	 * The maximum amount to the payer that is permitted in operation.
 	 * 
 	 *
 	 * @var decimal
@@ -36,6 +42,8 @@ class InfoTariff
 	 public $sourceAmountMax = null;
 
 	/**
+	 * Валюта счета получателя платежа для которого расчитывается лимит суммы операции.
+	 * Payee account currency for which the calculated limit of the transaction amount.
 	 * 
 	 *
 	 * @var string
@@ -43,6 +51,8 @@ class InfoTariff
 	 public $targetRangeCurrency = null;
 
 	/**
+	 * Минимальная сумма для получателя платежа, допустимая в операции.
+	 * The minimum amount to the payee that is permitted in operation.
 	 * 
 	 *
 	 * @var decimal
@@ -50,6 +60,8 @@ class InfoTariff
 	 public $targetAmountMin = null;
 
 	/**
+	 * Максимальная сумма для получателя платежа, допустимая в операции.
+	 * The maximum amount to the payee that is permitted in operation.
 	 * 
 	 *
 	 * @var decimal

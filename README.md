@@ -46,6 +46,20 @@ composer.json
 
 ```
 
+Версия 25539 от 19 августа 2016 г.
+
+composer.json
+```
+
+{
+	"require": {
+		"moneta/webservice": "v25539"
+	}
+}
+
+```
+
+
 Пример использования
 ====
 

@@ -7,16 +7,16 @@
 namespace Moneta\Types;
 
 /**
- * Информация об URL
-	 * URL information
+ * Расширенная информация об URL платежной системы.
+	 * Fully information about URL of the payment system.
 	 * 
  */
 class InfoUrl
 {
 	
 	/**
-	 * URL платежной системы
-	 * URL of payment system
+	 * URL платежной системы.
+	 * URL of the payment system.
 	 * 
 	 *
 	 * @var string
@@ -24,8 +24,8 @@ class InfoUrl
 	 public $href = null;
 
 	/**
-	 * Представление URL платежной системы
-	 * URL name of payment system
+	 * Представление URL платежной системы.
+	 * URL name of the payment system.
 	 * 
 	 *
 	 * @var string

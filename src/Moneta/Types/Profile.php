@@ -91,29 +91,29 @@ namespace Moneta\Types;
 	 * timezone. Часовой пояс пользователя.
 	 * Список идентификаторов временных зон, которые используются в системе, доступен на странице wikipedia.org.
 	 * ui_language. язык интерфейса пользователя. RU - русский, EN - английский.
-	 * email_for_notifications. Аадрес электронной почты.
-	 * partner_conditions_laws. Статус "Содержимое сайта / товары и услуги соответствуют требованиям законодательства РФ и страны регистрации".
-	 * partner_conditions_ethical. Статус "Содержимое сайта соответствует общепринятым морально-этическим нормам".
-	 * partner_conditions_full_desc. Статус "Товары или услуги имеют исчерпывающее описание, не подразумевающее двоякое толкование".
-	 * partner_conditions_hosting. Статус "Сайт не размещён на бесплатном хостинге".
-	 * partner_conditions_payee. Статус "На сайте присутствует информация о получателе платежей, доступная без регистрации плательщика".
-	 * partner_conditions_payer. Статус "На сайте присутствует контактная информация для плательщиков, доступная без регистрации".
-	 * partner_conditions_site. Статус "Сайт полностью функционален и заполнен контентом".
-	 * partner_conditions_paw_info. Статус "Сайт содержит доступную без регистрации информацию о том, что оплата происходит с использованием сервиса PayAnyWay".
-	 * partner_conditions_payment_info. Статус "Описание порядка и процесса оплаты, а также информация о временном промежутке между оплатой и отгрузкой (доставкой) товара или предоставлением услуги доступны без регистрации".
-	 * partner_conditions_correct_data. Статус "Все необходимые данные внесены и являются актуальными".
-	 * partner_conditions_documents. Статус "На сайте размещены документы, необходимые для совершения сделки между интернет-магазином и клиентами в соответствии с требованиями Законодательства РФ".
-	 * partner_conditions_laws_details. Подробности для "Содержимое сайта / товары и услуги соответствуют требованиям законодательства РФ и страны регистрации".
-	 * partner_conditions_ethical_details. Подробности для "Содержимое сайта соответствует общепринятым морально-этическим нормам".
-	 * partner_conditions_full_desc_details. Подробности для "Товары или услуги имеют исчерпывающее описание, не подразумевающее двоякое толкование".
-	 * partner_conditions_hosting_details. Подробности для "Сайт не размещён на бесплатном хостинге".
-	 * partner_conditions_payee_details. Подробности для "На сайте присутствует информация о получателе платежей, доступная без регистрации плательщика".
-	 * partner_conditions_payer_details. Подробности для "На сайте присутствует контактная информация для плательщиков, доступная без регистрации".
-	 * partner_conditions_site_details. Подробности для "Сайт полностью функционален и заполнен контентом".
-	 * partner_conditions_paw_info_details. Подробности для "Сайт содержит доступную без регистрации информацию о том, что оплата происходит с использованием сервиса PayAnyWay".
-	 * partner_conditions_payment_info_details. Подробности для "Описание порядка и процесса оплаты, а также информация о временном промежутке между оплатой и отгрузкой (доставкой) товара или предоставлением услуги доступны без регистрации".
-	 * partner_conditions_correct_data_details. Подробности для "Все необходимые данные внесены и являются актуальными".
-	 * partner_conditions_documents_details. Подробности для "На сайте размещены документы, необходимые для совершения сделки между интернет-магазином и клиентами в соответствии с требованиями Законодательства РФ".
+	 * email_for_notifications. Адрес электронной почты.
+	 * conditions_laws. Статус "Содержимое сайта / товары и услуги соответствуют требованиям законодательства РФ и страны регистрации".
+	 * conditions_ethical. Статус "Содержимое сайта соответствует общепринятым морально-этическим нормам".
+	 * conditions_full_desc. Статус "Товары или услуги имеют исчерпывающее описание, не подразумевающее двоякое толкование".
+	 * conditions_hosting. Статус "Сайт не размещён на бесплатном хостинге".
+	 * conditions_payee. Статус "На сайте присутствует информация о получателе платежей, доступная без регистрации плательщика".
+	 * conditions_payer. Статус "На сайте присутствует контактная информация для плательщиков, доступная без регистрации".
+	 * conditions_site. Статус "Сайт полностью функционален и заполнен контентом".
+	 * conditions_paw_info. Статус "Сайт содержит доступную без регистрации информацию о том, что оплата происходит с использованием сервиса PayAnyWay".
+	 * conditions_payment_info. Статус "Описание порядка и процесса оплаты, а также информация о временном промежутке между оплатой и отгрузкой (доставкой) товара или предоставлением услуги доступны без регистрации".
+	 * conditions_correct_data. Статус "Все необходимые данные внесены и являются актуальными".
+	 * conditions_documents. Статус "На сайте размещены документы, необходимые для совершения сделки между интернет-магазином и клиентами в соответствии с требованиями Законодательства РФ".
+	 * conditions_laws_details. Подробности для "Содержимое сайта / товары и услуги соответствуют требованиям законодательства РФ и страны регистрации".
+	 * conditions_ethical_details. Подробности для "Содержимое сайта соответствует общепринятым морально-этическим нормам".
+	 * conditions_full_desc_details. Подробности для "Товары или услуги имеют исчерпывающее описание, не подразумевающее двоякое толкование".
+	 * conditions_hosting_details. Подробности для "Сайт не размещён на бесплатном хостинге".
+	 * conditions_payee_details. Подробности для "На сайте присутствует информация о получателе платежей, доступная без регистрации плательщика".
+	 * conditions_payer_details. Подробности для "На сайте присутствует контактная информация для плательщиков, доступная без регистрации".
+	 * conditions_site_details. Подробности для "Сайт полностью функционален и заполнен контентом".
+	 * conditions_paw_info_details. Подробности для "Сайт содержит доступную без регистрации информацию о том, что оплата происходит с использованием сервиса PayAnyWay".
+	 * conditions_payment_info_details. Подробности для "Описание порядка и процесса оплаты, а также информация о временном промежутке между оплатой и отгрузкой (доставкой) товара или предоставлением услуги доступны без регистрации".
+	 * conditions_correct_data_details. Подробности для "Все необходимые данные внесены и являются актуальными".
+	 * conditions_documents_details. Подробности для "На сайте размещены документы, необходимые для совершения сделки между интернет-магазином и клиентами в соответствии с требованиями Законодательства РФ".
 	 * agreement_sent_date. Дата отправки Заявления.
 	 * agreement_sent_method. Способ отправки Заявления.
 	 * capital_type. Вид капитала.
@@ -213,28 +213,28 @@ namespace Moneta\Types;
 	 * EN
 	 * RU
 	 * email_for_notifications. Email address of the organization that is used for notifications.
-	 * partner_conditions_laws. State for "Website content / goods and services comply with the RF legislation and country of registration requirements".
-	 * partner_conditions_ethical. State for "Website content complies with generally accepted moral and ethical norms".
-	 * partner_conditions_full_desc. State for "Goods or services have comprehensive description, not implying double interpretation".
-	 * partner_conditions_hosting. State for "Website is not hosted on free hosting".
-	 * partner_conditions_payee. State for "There is information on beneficiary of payment available for unauthorized payers on the website".
-	 * partner_conditions_payer. State for "There's contact information available for unauthorized payers on the website".
-	 * partner_conditions_site. State for "Website is fully functional and filled in with content".
-	 * partner_conditions_paw_info. State for "Website contains information reporting that payment is occurred via PayAnyWay service available for unauthorized users.".
-	 * partner_conditions_payment_info. State for "Payment order and process description, as well as information on temporary interval between payment and dispatch (delivery) of wares or provision of service are available for unauthorized users.".
-	 * partner_conditions_correct_data. State for "All essential data are inserted and are supposed to be up-to-date".
-	 * partner_conditions_documents. State for "The website contains the documents required for the transaction between the online store and customers in accordance with the legislation of the Russian Federation (the contract-offer and / or other documents).Example of a typical contract-offer".
-	 * partner_conditions_laws_details. Details for "Website content / goods and services comply with the RF legislation and country of registration requirements".
-	 * partner_conditions_ethical_details. Details for "Website content complies with generally accepted moral and ethical norms".
-	 * partner_conditions_full_desc_details. Details for "Goods or services have comprehensive description, not implying double interpretation".
-	 * partner_conditions_hosting_details. Details for "Website is not hosted on free hosting".
-	 * partner_conditions_payee_details. Details for "There is information on beneficiary of payment available for unauthorized payers on the website".
-	 * partner_conditions_payer_details. Details for "There's contact information available for unauthorized payers on the website".
-	 * partner_conditions_site_details. Details for "Website is fully functional and filled in with content".
-	 * partner_conditions_paw_info_details. Details for "Website contains information reporting that payment is occurred via PayAnyWay service available for unauthorized users.".
-	 * partner_conditions_payment_info_details. Details for "Payment order and process description, as well as information on temporary interval between payment and dispatch (delivery) of wares or provision of service are available for unauthorized users.".
-	 * partner_conditions_correct_data_details. Details for "All essential data are inserted and are supposed to be up-to-date".
-	 * partner_conditions_documents_details. Details for "The website contains the documents required for the transaction between the online store and customers in accordance with the legislation of the Russian Federation (the contract-offer and / or other documents). Example of a typical contract-offer".
+	 * conditions_laws. State for "Website content / goods and services comply with the RF legislation and country of registration requirements".
+	 * conditions_ethical. State for "Website content complies with generally accepted moral and ethical norms".
+	 * conditions_full_desc. State for "Goods or services have comprehensive description, not implying double interpretation".
+	 * conditions_hosting. State for "Website is not hosted on free hosting".
+	 * conditions_payee. State for "There is information on beneficiary of payment available for unauthorized payers on the website".
+	 * conditions_payer. State for "There's contact information available for unauthorized payers on the website".
+	 * conditions_site. State for "Website is fully functional and filled in with content".
+	 * conditions_paw_info. State for "Website contains information reporting that payment is occurred via PayAnyWay service available for unauthorized users.".
+	 * conditions_payment_info. State for "Payment order and process description, as well as information on temporary interval between payment and dispatch (delivery) of wares or provision of service are available for unauthorized users.".
+	 * conditions_correct_data. State for "All essential data are inserted and are supposed to be up-to-date".
+	 * conditions_documents. State for "The website contains the documents required for the transaction between the online store and customers in accordance with the legislation of the Russian Federation (the contract-offer and / or other documents).Example of a typical contract-offer".
+	 * conditions_laws_details. Details for "Website content / goods and services comply with the RF legislation and country of registration requirements".
+	 * conditions_ethical_details. Details for "Website content complies with generally accepted moral and ethical norms".
+	 * conditions_full_desc_details. Details for "Goods or services have comprehensive description, not implying double interpretation".
+	 * conditions_hosting_details. Details for "Website is not hosted on free hosting".
+	 * conditions_payee_details. Details for "There is information on beneficiary of payment available for unauthorized payers on the website".
+	 * conditions_payer_details. Details for "There's contact information available for unauthorized payers on the website".
+	 * conditions_site_details. Details for "Website is fully functional and filled in with content".
+	 * conditions_paw_info_details. Details for "Website contains information reporting that payment is occurred via PayAnyWay service available for unauthorized users.".
+	 * conditions_payment_info_details. Details for "Payment order and process description, as well as information on temporary interval between payment and dispatch (delivery) of wares or provision of service are available for unauthorized users.".
+	 * conditions_correct_data_details. Details for "All essential data are inserted and are supposed to be up-to-date".
+	 * conditions_documents_details. Details for "The website contains the documents required for the transaction between the online store and customers in accordance with the legislation of the Russian Federation (the contract-offer and / or other documents). Example of a typical contract-offer".
 	 * agreement_sent_date. Date of sending the document.
 	 * agreement_sent_method. Method of dispatch the document.
 	 * capital_type. Capital type.
