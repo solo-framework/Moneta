@@ -79,6 +79,7 @@ namespace Moneta\Types;
 	 * inn. Номер ИНН, задается при регистрации партнера-резидента.
 	 * fio_director. ФИО руководителя.
 	 * phone_director. Контактный телефон директора.
+	 * countryСтрана. Использовать isocode [RUS], isocode2L [RU] или имя [Россия]
 	 * legal_address. Адрес постоянно действующего органа управления.
 	 * post_address. Почтовый адрес.
 	 * phone_contact. Контактный телефон.
@@ -198,6 +199,7 @@ namespace Moneta\Types;
 	 * inn. Tax identification number (TIN).
 	 * fio_director. Managing director full name.
 	 * phone_director. Managing director office phone.
+	 * countryCountry. Use isocode [RUS], isocode2L [RU] or name[Russia]
 	 * legal_address. Legal address.
 	 * post_address. Postal address.
 	 * phone_contact. Contact phone number.

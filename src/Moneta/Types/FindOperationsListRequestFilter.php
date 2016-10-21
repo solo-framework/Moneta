@@ -216,4 +216,23 @@ class FindOperationsListRequestFilter
 	 */
 	 public $searchInArchive = null;
 
+	/**
+	 * Список свойств операции, разделённый запятыми, которые будут возвращены в ответе.
+	 * Стандартные свойства операции передавать не обязательно, потому что они возвращаются всегда.
+	 * Это свойства: modified, statusid, typeid, category, sourceaccountid, sourceamount, sourcecurrencycode,
+	 * targetaccountid, targetamount, targetcurrencycode, description, clienttransaction.
+	 * Например, если для банковского перевода требуется получить в ответе не все свойства, то можно указать:
+	 * wirebankbik, wirebankaccount, wireusername, customfield:email
+	 * List of comma separated transaction properties which will be returned in a response.
+	 * It is not obligatory to provide standard transaction properties since they are always returned.
+	 * These properties are: modified, statusid, typeid, category, sourceaccountid, sourceamount, sourcecurrencycode,
+	 * targetaccountid, targetamount, targetcurrencycode, description, clienttransaction.
+	 * For example, in case with bank transfer when it is required to receive not all properties in a response, you can use the following:
+	 * wirebankbik, wirebankaccount, wireusername, customfield:email
+	 * 
+	 *
+	 * @var string
+	 */
+	 public $attributeNamesInResponse = null;
+
 }
