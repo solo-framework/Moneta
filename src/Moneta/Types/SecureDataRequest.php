@@ -24,6 +24,18 @@ class SecureDataRequest
 	 public $publicId = null;
 
 	/**
+	 * Номер счета.
+	 * Поле следует заполнить, если данные этого запроса будут использоваться для проведения финансовой операции.
+	 * Например, PaymentRequest, TransferRequest, AuthoriseTransactionRequest, ConfirmTransactionRequest и т.д.
+	 * При проведении операции следует указать этот же самый номер счета - для другого счета эти данные использовать нельзя.
+	 * Account ID.
+	 * 
+	 *
+	 * @var long
+	 */
+	 public $accountId = null;
+
+	/**
 	 * Свойства, которые надо сохранить.
 	 * Attributes for preservation.
 	 * 

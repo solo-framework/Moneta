@@ -9,7 +9,7 @@ namespace Moneta\Types;
 /**
  * 
  */
-class LogoutResponse
+class AsyncResponse
 {
 	
 }

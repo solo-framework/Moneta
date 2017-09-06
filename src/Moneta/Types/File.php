@@ -69,4 +69,13 @@ class File
 	 */
 	 public $title = null;
 
+	/**
+	 * Ссылка для получения бинарного данных
+	 * Direct link for binary data
+	 * 
+	 *
+	 * @var string
+	 */
+	 public $requestUri = null;
+
 }

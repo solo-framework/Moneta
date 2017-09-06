@@ -825,6 +825,19 @@ class MonetaWebServiceConnector
 	/**
 	 * 
 	 *
+	 * @param \Moneta\Types\SimplifiedIdentificationRequest $request
+	 *
+	 * @return \Moneta\Types\SimplifiedIdentificationResponse
+	 */
+	public function SimplifiedIdentification(\Moneta\Types\SimplifiedIdentificationRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
 	 * @param \Moneta\Types\SecureDataRequest $request
 	 *
 	 * @return \Moneta\Types\SecureDataResponse
@@ -838,11 +851,11 @@ class MonetaWebServiceConnector
 	/**
 	 * 
 	 *
-	 * @param \Moneta\Types\LoginRequest $request
+	 * @param \Moneta\Types\CreateOperationTemplateRequest $request
 	 *
-	 * @return \Moneta\Types\LoginResponse
+	 * @return \Moneta\Types\CreateOperationTemplateResponse
 	 */
-	public function Login(\Moneta\Types\LoginRequest $request)
+	public function CreateOperationTemplate(\Moneta\Types\CreateOperationTemplateRequest $request)
 	{
 		$request = array($request);
 		return $this->call(__FUNCTION__, $request);
@@ -851,11 +864,50 @@ class MonetaWebServiceConnector
 	/**
 	 * 
 	 *
-	 * @param \Moneta\Types\LogoutRequest $request
+	 * @param \Moneta\Types\EditOperationTemplateRequest $request
 	 *
-	 * @return \Moneta\Types\LogoutResponse
+	 * @return \Moneta\Types\EditOperationTemplateResponse
 	 */
-	public function Logout(\Moneta\Types\LogoutRequest $request)
+	public function EditOperationTemplate(\Moneta\Types\EditOperationTemplateRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
+	 * @param \Moneta\Types\FindOperationTemplatesRequest $request
+	 *
+	 * @return \Moneta\Types\FindOperationTemplatesResponse
+	 */
+	public function FindOperationTemplates(\Moneta\Types\FindOperationTemplatesRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
+	 * @param \Moneta\Types\DeleteOperationTemplateRequest $request
+	 *
+	 * @return \Moneta\Types\DeleteOperationTemplateResponse
+	 */
+	public function DeleteOperationTemplate(\Moneta\Types\DeleteOperationTemplateRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
+	 * @param \Moneta\Types\AsyncRequest $request
+	 *
+	 * @return \Moneta\Types\AsyncResponse
+	 */
+	public function Async(\Moneta\Types\AsyncRequest $request)
 	{
 		$request = array($request);
 		return $this->call(__FUNCTION__, $request);

@@ -5,11 +5,18 @@
 // see https://solo-framework-lib.googlecode.com 
 
 namespace Moneta\Types;
-
 /**
- * 
+ * Тип уведомлений.
+	 * 
  */
-class LoginResponse
+class ProfileNotificationType
 {
-	
+
+	/**
+	 * 
+	 *
+	 * @var string
+	 */
+	const EMAIL = 'EMAIL';
+
 }

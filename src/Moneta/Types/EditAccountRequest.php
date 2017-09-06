@@ -142,4 +142,37 @@ class EditAccountRequest
 	 */
 	 public $onCancelledCreditUrl = null;
 
+	/**
+	 * Свойства счета.
+	 * Данные представляются в виде "ключ-значение". Возможные ключи:
+	 * alias. Название счета. Название счета должно быть уникальным среди счетов одного пользователя.
+	 * Если необходимо Название счета (Псевдоним) сделать публичным, то в элементе attribute для поля alias следует передать элемент published со значение true.
+	 * Account properties.
+	 * Information about an account contains a list of key-value pairs. Valid keys for account are:
+	 * alias. Account alias. Specify a unique name among the other accounts of the specified user.
+	 * 
+	 *
+	 * @var KeyValueAttribute
+	 */
+	 public $attribute = null;
+
+	/**
+	 * Свойства счета.
+	 * Данные представляются в виде "ключ-значение". Возможные ключи:
+	 * alias. Название счета. Название счета должно быть уникальным среди счетов одного пользователя.
+	 * Если необходимо Название счета (Псевдоним) сделать публичным, то в элементе attribute для поля alias следует передать элемент published со значение true.
+	 * Account properties.
+	 * Information about an account contains a list of key-value pairs. Valid keys for account are:
+	 * alias. Account alias. Specify a unique name among the other accounts of the specified user.
+	 * 
+	 *
+	 * @param KeyValueAttribute
+	 *
+	 * @return void
+	 */
+	public function addAttribute(KeyValueAttribute $item)
+	{
+		$this->attribute[] = $item;
+	}
+
 }

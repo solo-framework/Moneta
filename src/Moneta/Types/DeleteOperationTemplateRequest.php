@@ -7,23 +7,18 @@
 namespace Moneta\Types;
 
 /**
- * 
+ * Запрос на удаление шаблона операции.
+	 * 
  */
-class LoginRequest
+class DeleteOperationTemplateRequest
 {
 	
 	/**
+	 * Идентификатор шаблона операции.
 	 * 
 	 *
-	 * @var string
+	 * @var long
 	 */
-	 public $login = null;
-
-	/**
-	 * 
-	 *
-	 * @var string
-	 */
-	 public $password = null;
+	 public $id = null;
 
 }

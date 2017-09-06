@@ -38,4 +38,13 @@ class CheckProfileResponse
 	 */
 	 public $foundersTotalShare = null;
 
+	/**
+	 * Дней до блокировки партнера - перенос в группу Expired
+	 * Remaining days to block partner - move in group Expired
+	 * 
+	 *
+	 * @var long
+	 */
+	 public $daysBeforePartnerLock = null;
+
 }

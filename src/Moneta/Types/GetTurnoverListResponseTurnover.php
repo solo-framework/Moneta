@@ -76,6 +76,15 @@ class GetTurnoverListResponseTurnover
 	 public $incomeTransactionsCount = null;
 
 	/**
+	 * Приход. Заблокированная сумма.
+	 * Income. Locked balance.
+	 * 
+	 *
+	 * @var decimal
+	 */
+	 public $incomeLockedBalance = null;
+
+	/**
 	 * Расход. Сумма.
 	 * Amount of expenses.
 	 * 
@@ -110,6 +119,15 @@ class GetTurnoverListResponseTurnover
 	 * @var long
 	 */
 	 public $expenseTransactionsCount = null;
+
+	/**
+	 * Расход. Заблокированная сумма.
+	 * Expenses. Locked balance.
+	 * 
+	 *
+	 * @var decimal
+	 */
+	 public $expenseLockedBalance = null;
 
 	/**
 	 * Итого.

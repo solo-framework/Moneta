@@ -172,6 +172,7 @@ class AccountInfo
 	 * и значением value="true", то перед проведением операции следует сделать запрос "GetAccountPaymentPasswordChallengeRequest",
 	 * который вернет строку запроса для платежного пароля. Это значение необходимо использовать в поле "paymentPasswordChallenge"
 	 * в запросах на проведение операции (например: "PaymentRequest", "TransferRequest", "AuthoriseTransactionRequest" и т.д.).
+	 * alias. Название счета. В этом свойстве также можно узнать, является ли название счета "публичным".
 	 * Additional account attributes.
 	 * MONETA.RU returns this element only if you set the version attribute of your request toVERSION_2.
 	 * Valid values for the key and value elements:
@@ -184,6 +185,7 @@ class AccountInfo
 	 * paymentPasswordChallengeRequired. If the response contains an attribute with the key="paymentPasswordChallengeRequired"
 	 * and value="true", you must call GetAccountPaymentPasswordChallengeRequest for the payer's account to get the paymentPasswordChallenge element.
 	 * This element is used in the following requests: PaymentRequest, TransferRequest, AuthoriseTransactionRequest.
+	 * alias. Account alias.
 	 * 
 	 *
 	 * @var KeyValueAttribute
@@ -204,6 +206,7 @@ class AccountInfo
 	 * и значением value="true", то перед проведением операции следует сделать запрос "GetAccountPaymentPasswordChallengeRequest",
 	 * который вернет строку запроса для платежного пароля. Это значение необходимо использовать в поле "paymentPasswordChallenge"
 	 * в запросах на проведение операции (например: "PaymentRequest", "TransferRequest", "AuthoriseTransactionRequest" и т.д.).
+	 * alias. Название счета. В этом свойстве также можно узнать, является ли название счета "публичным".
 	 * Additional account attributes.
 	 * MONETA.RU returns this element only if you set the version attribute of your request toVERSION_2.
 	 * Valid values for the key and value elements:
@@ -216,6 +219,7 @@ class AccountInfo
 	 * paymentPasswordChallengeRequired. If the response contains an attribute with the key="paymentPasswordChallengeRequired"
 	 * and value="true", you must call GetAccountPaymentPasswordChallengeRequest for the payer's account to get the paymentPasswordChallenge element.
 	 * This element is used in the following requests: PaymentRequest, TransferRequest, AuthoriseTransactionRequest.
+	 * alias. Account alias.
 	 * 
 	 *
 	 * @param KeyValueAttribute

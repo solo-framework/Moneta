@@ -7,9 +7,10 @@
 namespace Moneta\Types;
 
 /**
- * 
+ * Параметры шаблона операции, если он имеет тип OperationTemplateType.COMMON.
+	 * 
  */
-class LogoutRequest
+class CommonOperationTemplateParameters extends OperationTemplateAmount
 {
 	
 }
