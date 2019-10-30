@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Запрос на подтверждение сотового телефона пользователя (поле cell_phone объекта tns:Profile).
+ * Запрос на подтверждение (approval=true) или отмену подтверждения (approval=false) сотового телефона пользователя (поле cell_phone объекта tns:Profile).
 	 * The second request for the confirmation of a user's phone number that is specified in the cell_phone element of tns:Profile.
 	 * After you send the ApprovePhoneSendConfirmation request, the user receives an SMS message with the verification code to the unconfirmed mobile phone number. Use the ApprovePhoneApplyCode request to send the verification code to MONETA.RU.
 	 * 
@@ -16,7 +16,20 @@ class ApprovePhoneApplyCodeRequest
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ. Если это поле не задано, то используется текущий пользователь.
+	 * true. Подтверждение сотового телефона.
+	 * false. Отмена подтверждения сотового телефона.
+	 * Значение по умолчанию равно true.
+	 * true. Cell phone number confirmation.
+	 * false. Cell phone number disapproval.
+	 * Default value is true.
+	 * 
+	 *
+	 * @var boolean
+	 */
+	 public $approval = null;
+
+	/**
+	 * ID пользователя в системе MONETA.RU. Если это поле не задано, то используется текущий пользователь.
 	 * The unique identifier of the MONETA.RU user whose phone number must be confirmed. If you omit this element, MONETA.RU uses the ID of the user who sends the request.
 	 * 
 	 *

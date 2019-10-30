@@ -39,4 +39,16 @@ class KeyValueApprovedAttribute extends KeyValueAttribute
 	 */
 	 public $published = null;
 
+	/**
+	 * Поле fromPrototype показывает, что свойство прочитано из "объекта-прототипа".
+	 * Поле только для чтения.
+	 * Для чтения этого свойства в запросе необходимо выставлять атрибут version равный или больше VERSION_3.
+	 * Indicates that property was read form "prototype object".
+	 * MONETA.RU returns this element only if you set the version attribute of your request to VERSION_3.
+	 * 
+	 *
+	 * @var boolean
+	 */
+	 public $fromPrototype = null;
+
 }

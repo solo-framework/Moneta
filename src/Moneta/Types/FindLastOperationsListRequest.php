@@ -17,7 +17,7 @@ class FindLastOperationsListRequest
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ.
+	 * ID пользователя в системе MONETA.RU.
 	 * Если это поле не задано, то используется текущий пользователь.
 	 * Unique identifier of a user in MONETA.RU.
 	 * If you omit this element, MONETA.RU sets the value of this element to the user who sends the request

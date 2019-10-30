@@ -177,4 +177,44 @@ class GetFinancialFlowsListResponseFinancialFlow
 	 */
 	 public $operationStatusState = null;
 
+	/**
+	 * false - Обычные проводки.
+	 * true - Сторнирующие проводки.
+	 * Для получения этого поля в запросе необходимо выставлять атрибут version равный или больше VERSION_2.
+	 * false - Normal postings.
+	 * true - Reversal postings.
+	 * MONETA.RU returns this element only if you set the version attribute of your request to VERSION_2 or higher.
+	 * 
+	 *
+	 * @var boolean
+	 */
+	 public $reversal = null;
+
+	/**
+	 * Дополнительные атрибуты ответа.
+	 * Для получения этого поля в запросе необходимо выставлять атрибут version равный или больше VERSION_2.
+	 * Additional response parameters.
+	 * MONETA.RU returns this element only if you set the version attribute of your request to VERSION_2 or higher.
+	 * 
+	 *
+	 * @var KeyValueAttribute
+	 */
+	 public $attribute = null;
+
+	/**
+	 * Дополнительные атрибуты ответа.
+	 * Для получения этого поля в запросе необходимо выставлять атрибут version равный или больше VERSION_2.
+	 * Additional response parameters.
+	 * MONETA.RU returns this element only if you set the version attribute of your request to VERSION_2 or higher.
+	 * 
+	 *
+	 * @param KeyValueAttribute
+	 *
+	 * @return void
+	 */
+	public function addAttribute(KeyValueAttribute $item)
+	{
+		$this->attribute[] = $item;
+	}
+
 }

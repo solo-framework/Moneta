@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Тип, описывающий атрибуты счета в системе МОНЕТА.РУ.
+ * Тип, описывающий атрибуты счета в системе MONETA.RU.
 	 * Information about a MONETA.RU account.
 	 * 
  */
@@ -15,7 +15,7 @@ class AccountInfo
 {
 	
 	/**
-	 * Номер счета в системе МОНЕТА.РУ.
+	 * Номер счета в системе MONETA.RU.
 	 * MONETA.RU account number.
 	 * 
 	 *
@@ -51,7 +51,7 @@ class AccountInfo
 	 public $availableBalance = null;
 
 	/**
-	 * Тип счета в системе МОНЕТА.РУ.
+	 * Тип счета в системе MONETA.RU.
 	 * MONETA.RU account type.
 	 * 
 	 *
@@ -60,7 +60,7 @@ class AccountInfo
 	 public $type = null;
 
 	/**
-	 * Статус счета в системе МОНЕТА.РУ.
+	 * Статус счета в системе MONETA.RU.
 	 * Status of the MONETA.RU account.
 	 * 
 	 *
@@ -69,7 +69,7 @@ class AccountInfo
 	 public $status = null;
 
 	/**
-	 * Название счета в системе МОНЕТА.РУ.
+	 * Название счета в системе MONETA.RU.
 	 * Account alias.
 	 * 
 	 *
@@ -172,7 +172,36 @@ class AccountInfo
 	 * и значением value="true", то перед проведением операции следует сделать запрос "GetAccountPaymentPasswordChallengeRequest",
 	 * который вернет строку запроса для платежного пароля. Это значение необходимо использовать в поле "paymentPasswordChallenge"
 	 * в запросах на проведение операции (например: "PaymentRequest", "TransferRequest", "AuthoriseTransactionRequest" и т.д.).
+	 * paymentPasswordExpirationDate. Срок действия платежного пароля. Пример: 2017-01-09T14:11:24.000+03:00.
+	 * Это поле возвращается, если на счете установлен "Срок действия платежного пароля" и тип платежного пароля (paymentPasswordType) статический (STATIC).
 	 * alias. Название счета. В этом свойстве также можно узнать, является ли название счета "публичным".
+	 * primary. Если счет является "Основным", то значение будет равно true.
+	 * Возвращается в методе FindAccountsListRequest. В методах FindAccountByIdRequest и FindAccountByAliasRequest это значение не возвращается.
+	 * delegated. Если счет является делегированным, то значение будет равно true.
+	 * balanceChangesDate. Дата изменения баланса. Пример: 2017-01-09T14:11:24.000+03:00
+	 * bankAccountForCredits. Внутрибанковский счет для пополнения.
+	 * bankAccountForDebits. Внутрибанковский счет для списания.
+	 * interfacetype. Тип интерфейса.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Тестовый режим (true|false).
+	 * paymentsystem_limitids. Список платежных систем.
+	 * paymentsystem_unitid. Платежная система по умолчанию.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP метод (PayUrl, CheckUrl).
+	 * signature. Код проверки целостности данных.
+	 * issignaturemandatory. Подпись формы оплаты обязательна (true|false).
+	 * redefinesettingsinurl. Можно переопределять настройки в url (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (возврат для iframe).
+	 * onsuccessdebiturl. URL после списания средств.
+	 * onsuccesscrediturl. URL после зачисления средств.
+	 * oncancelleddebiturl. URL после отмены списания средств.
+	 * oncancelledcrediturl. URL после отмены зачисления средств.
+	 * onauthoriseurl. URL после авторизации средств.
 	 * Additional account attributes.
 	 * MONETA.RU returns this element only if you set the version attribute of your request toVERSION_2.
 	 * Valid values for the key and value elements:
@@ -185,7 +214,35 @@ class AccountInfo
 	 * paymentPasswordChallengeRequired. If the response contains an attribute with the key="paymentPasswordChallengeRequired"
 	 * and value="true", you must call GetAccountPaymentPasswordChallengeRequest for the payer's account to get the paymentPasswordChallenge element.
 	 * This element is used in the following requests: PaymentRequest, TransferRequest, AuthoriseTransactionRequest.
+	 * paymentPasswordExpirationDate. Payment password expiration date. Example: 2017-01-09T14:11:24.000+03:00
 	 * alias. Account alias.
+	 * primary. Value is true, if the account is primary.
+	 * Value is used in FindAccountsListRequest method only.
+	 * delegated. Value is true, if the account is delegated.
+	 * balanceChangesDate. Balance changes. Example: 2017-01-09T14:11:24.000+03:00
+	 * bankAccountForCredits. Bank account for credits.
+	 * bankAccountForDebits. Bank account for debits.
+	 * interfacetype. Interface type.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Test mode (true|false).
+	 * paymentsystem_limitids. Payment method IDs.
+	 * paymentsystem_unitid. Default payment method.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP method (PayUrl, CheckUrl).
+	 * signature. Code of data integrity verification.
+	 * issignaturemandatory. Mandatory payment form signature (true|false).
+	 * redefinesettingsinurl. Settings can be redefined in URL (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (redirect in iframe).
+	 * onsuccessdebiturl. URL on debiting.
+	 * onsuccesscrediturl. URL on crediting.
+	 * oncancelleddebiturl. URL on cancelled debit.
+	 * oncancelledcrediturl. URL on cancelled credit.
+	 * onauthoriseurl. URL on authorising.
 	 * 
 	 *
 	 * @var KeyValueAttribute
@@ -206,7 +263,36 @@ class AccountInfo
 	 * и значением value="true", то перед проведением операции следует сделать запрос "GetAccountPaymentPasswordChallengeRequest",
 	 * который вернет строку запроса для платежного пароля. Это значение необходимо использовать в поле "paymentPasswordChallenge"
 	 * в запросах на проведение операции (например: "PaymentRequest", "TransferRequest", "AuthoriseTransactionRequest" и т.д.).
+	 * paymentPasswordExpirationDate. Срок действия платежного пароля. Пример: 2017-01-09T14:11:24.000+03:00.
+	 * Это поле возвращается, если на счете установлен "Срок действия платежного пароля" и тип платежного пароля (paymentPasswordType) статический (STATIC).
 	 * alias. Название счета. В этом свойстве также можно узнать, является ли название счета "публичным".
+	 * primary. Если счет является "Основным", то значение будет равно true.
+	 * Возвращается в методе FindAccountsListRequest. В методах FindAccountByIdRequest и FindAccountByAliasRequest это значение не возвращается.
+	 * delegated. Если счет является делегированным, то значение будет равно true.
+	 * balanceChangesDate. Дата изменения баланса. Пример: 2017-01-09T14:11:24.000+03:00
+	 * bankAccountForCredits. Внутрибанковский счет для пополнения.
+	 * bankAccountForDebits. Внутрибанковский счет для списания.
+	 * interfacetype. Тип интерфейса.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Тестовый режим (true|false).
+	 * paymentsystem_limitids. Список платежных систем.
+	 * paymentsystem_unitid. Платежная система по умолчанию.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP метод (PayUrl, CheckUrl).
+	 * signature. Код проверки целостности данных.
+	 * issignaturemandatory. Подпись формы оплаты обязательна (true|false).
+	 * redefinesettingsinurl. Можно переопределять настройки в url (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (возврат для iframe).
+	 * onsuccessdebiturl. URL после списания средств.
+	 * onsuccesscrediturl. URL после зачисления средств.
+	 * oncancelleddebiturl. URL после отмены списания средств.
+	 * oncancelledcrediturl. URL после отмены зачисления средств.
+	 * onauthoriseurl. URL после авторизации средств.
 	 * Additional account attributes.
 	 * MONETA.RU returns this element only if you set the version attribute of your request toVERSION_2.
 	 * Valid values for the key and value elements:
@@ -219,7 +305,35 @@ class AccountInfo
 	 * paymentPasswordChallengeRequired. If the response contains an attribute with the key="paymentPasswordChallengeRequired"
 	 * and value="true", you must call GetAccountPaymentPasswordChallengeRequest for the payer's account to get the paymentPasswordChallenge element.
 	 * This element is used in the following requests: PaymentRequest, TransferRequest, AuthoriseTransactionRequest.
+	 * paymentPasswordExpirationDate. Payment password expiration date. Example: 2017-01-09T14:11:24.000+03:00
 	 * alias. Account alias.
+	 * primary. Value is true, if the account is primary.
+	 * Value is used in FindAccountsListRequest method only.
+	 * delegated. Value is true, if the account is delegated.
+	 * balanceChangesDate. Balance changes. Example: 2017-01-09T14:11:24.000+03:00
+	 * bankAccountForCredits. Bank account for credits.
+	 * bankAccountForDebits. Bank account for debits.
+	 * interfacetype. Interface type.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Test mode (true|false).
+	 * paymentsystem_limitids. Payment method IDs.
+	 * paymentsystem_unitid. Default payment method.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP method (PayUrl, CheckUrl).
+	 * signature. Code of data integrity verification.
+	 * issignaturemandatory. Mandatory payment form signature (true|false).
+	 * redefinesettingsinurl. Settings can be redefined in URL (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (redirect in iframe).
+	 * onsuccessdebiturl. URL on debiting.
+	 * onsuccesscrediturl. URL on crediting.
+	 * oncancelleddebiturl. URL on cancelled debit.
+	 * oncancelledcrediturl. URL on cancelled credit.
+	 * onauthoriseurl. URL on authorising.
 	 * 
 	 *
 	 * @param KeyValueAttribute

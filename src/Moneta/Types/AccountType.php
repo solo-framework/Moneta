@@ -6,7 +6,7 @@
 
 namespace Moneta\Types;
 /**
- * Типы счетов в системе МОНЕТА.РУ.
+ * Типы счетов в системе MONETA.RU.
 	 * Specifies an account type in MONETA.RU.
 	 * 
  */
@@ -68,8 +68,8 @@ class AccountType
 	const AccountType6 = '6';
 
 	/**
-	 * Корпоративное средство платежа.
-	 * Enterprise account.
+	 * Расчетый счет.
+	 * Bank account.
 	 * 
 	 *
 	 * @var int

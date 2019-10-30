@@ -15,7 +15,7 @@ class CreateBankAccountResponse
 {
 	
 	/**
-	 * Идентификатор банковских реквизитов в системе МОНЕТА.РУ.
+	 * Идентификатор банковских реквизитов в системе MONETA.RU.
 	 * Unique identifier of the bank account in MONETA.RU.
 	 * 
 	 *

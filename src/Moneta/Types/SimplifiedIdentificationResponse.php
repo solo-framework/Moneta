@@ -55,7 +55,8 @@ class SimplifiedIdentificationResponse extends AbstractAttributeObject
 	 * middle_initial_name
 	 * last_name
 	 * cell_phone
-	 * snils
+	 * date_of_birth (optional)
+	 * snils (optional)
 	 * inn (optional)
 	 * В document возвращаются следующие поля:
 	 * type
@@ -70,7 +71,8 @@ class SimplifiedIdentificationResponse extends AbstractAttributeObject
 	 * middle_initial_name
 	 * last_name
 	 * cell_phone
-	 * snils
+	 * date_of_birth (optional)
+	 * snils (optional)
 	 * inn (optional)
 	 * The document contains the following attributes:
 	 * type (PASSPORT)

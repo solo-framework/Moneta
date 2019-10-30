@@ -6,7 +6,7 @@
 
 namespace Moneta\Types;
 /**
- * Типы документов, поддерживаемые в системе МОНЕТА.РУ.
+ * Типы документов, поддерживаемые в системе MONETA.RU.
 	 * Document types that are supported in MONETA.RU.
 	 * 
  */

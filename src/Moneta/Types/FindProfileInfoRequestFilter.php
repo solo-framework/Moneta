@@ -15,7 +15,7 @@ class FindProfileInfoRequestFilter
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ. ID пользователя "от которого" начинается поиск.
+	 * ID пользователя в системе MONETA.RU. ID пользователя "от которого" начинается поиск.
 	 * Если это поле не задано, то ищем пользователей, начиная от идентифицированного пользователя.
 	 * Unique identifier of the parent MONETA.RU account that acts as a starting point of the search.
 	 * If you omit this element, MONETA.RU uses the ID of the user who sends the reuqest.

@@ -8,7 +8,7 @@ namespace Moneta\Types;
 
 /**
  * Ответ, который приходит на запрос ApprovePhoneApplyCodeRequest. В ответе нет никаких данных.
-	 * Если в процессе подтверждения сотового телефона произошла ошибка, то возникнет Exception. Если Exception не возник - значит сотовый телефон гарантированно подтвержден.
+	 * Если в процессе подтверждения (или отмены подтверждения) сотового телефона произошла ошибка, то возникнет Exception. Если Exception не возник - значит сотовый телефон гарантированно подтвержден (или подтверждение отменено).
 	 * Response to ApprovePhoneApplyCodeRequest.
 	 * If MONETA.RU confirms the phone number successfully, the response contains no data and the phone number gets the approved status. If MONETA.RU fails to confirm the phone number, the response contains an exception.
 	 * 

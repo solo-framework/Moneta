@@ -29,4 +29,25 @@ class Version
 	 */
 	const VersionVERSION_2 = 'VERSION_2';
 
+	/**
+	 * 
+	 *
+	 * @var string
+	 */
+	const VersionVERSION_3 = 'VERSION_3';
+
+	/**
+	 * 
+	 *
+	 * @var string
+	 */
+	const VersionVERSION_4 = 'VERSION_4';
+
+	/**
+	 * 
+	 *
+	 * @var string
+	 */
+	const VersionVERSION_5 = 'VERSION_5';
+
 }

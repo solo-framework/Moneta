@@ -15,6 +15,17 @@ class CreateAccountRequest
 {
 	
 	/**
+	 * Тип счета.
+	 * Значение по умолчанию равно 2 (Расширенный счет).
+	 * Account type.
+	 * Default value is 2 (Advanced account).
+	 * 
+	 *
+	 * @var int
+	 */
+	 public $type = null;
+
+	/**
 	 * Валюта счета.
 	 * Account currency.
 	 * 
@@ -33,8 +44,8 @@ class CreateAccountRequest
 	 public $alias = null;
 
 	/**
-	 * Тип платежного пароля
-	 * Payment password type
+	 * Тип платежного пароля. По умолчанию равен STATIC.
+	 * Payment password type. Default value is STATIC.
 	 * 
 	 *
 	 * @var string
@@ -42,13 +53,22 @@ class CreateAccountRequest
 	 public $paymentPasswordType = null;
 
 	/**
-	 * Платежный пароль. Минимальная длина - 5 символов.
-	 * Payment password. Minimum length is 5 symbols.
+	 * Платежный пароль. Минимальная длина - 5 символов. Это поле используется, если тип платежного пароля равен STATIC.
+	 * Payment password. Minimum length is 5 symbols. Use this element, when paymentPasswordType is STATIC.
 	 * 
 	 *
 	 * @var string
 	 */
 	 public $paymentPassword = null;
+
+	/**
+	 * Включить срок действия платежного пароля. Срок действия пароля равен одному году. Это поле используется, если тип платежного пароля равен STATIC.
+	 * Payment password expiration date. Use this element, when paymentPasswordType is STATIC.
+	 * 
+	 *
+	 * @var boolean
+	 */
+	 public $paymentPasswordExpirationDate = null;
 
 	/**
 	 * Пользователь, которому будет принадлежать данный счет. Если это поле не задано, то счет создается для текущего пользователя.
@@ -132,13 +152,52 @@ class CreateAccountRequest
 	 public $onCancelledCreditUrl = null;
 
 	/**
+	 * URL после авторизации средств.
+	 * Specifies the URL of the script that MONETA.RU calls after authorising the payer's account.
+	 * 
+	 *
+	 * @var string
+	 */
+	 public $onAuthoriseUrl = null;
+
+	/**
 	 * Свойства счета.
 	 * Данные представляются в виде "ключ-значение". Возможные ключи:
 	 * alias. Название счета. Название счета должно быть уникальным среди счетов одного пользователя.
 	 * Если необходимо Название счета (Псевдоним) сделать публичным, то в элементе attribute для поля alias следует передать элемент published со значение true.
+	 * interfacetype. Тип интерфейса.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Тестовый режим (true|false).
+	 * paymentsystem_limitids. Список платежных систем.
+	 * paymentsystem_unitid. Платежная система по умолчанию.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP метод для PayUrl, CheckUrl (GET | POST).
+	 * issignaturemandatory. Подпись формы оплаты обязательна (true|false).
+	 * redefinesettingsinurl. Можно переопределять настройки в url (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (возврат для iframe). Возможные значения: _blank, _self, _top, _parent.
 	 * Account properties.
 	 * Information about an account contains a list of key-value pairs. Valid keys for account are:
 	 * alias. Account alias. Specify a unique name among the other accounts of the specified user.
+	 * interfacetype. Interface type.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Test mode (true|false).
+	 * paymentsystem_limitids. Payment method IDs.
+	 * paymentsystem_unitid. Default payment method.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP method for PayUrl, CheckUrl (GET | POST).
+	 * issignaturemandatory. Mandatory payment form signature (true|false).
+	 * redefinesettingsinurl. Settings can be redefined in URL (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (redirect in iframe). Available values: _blank, _self, _top, _parent.
 	 * 
 	 *
 	 * @var KeyValueAttribute
@@ -150,9 +209,39 @@ class CreateAccountRequest
 	 * Данные представляются в виде "ключ-значение". Возможные ключи:
 	 * alias. Название счета. Название счета должно быть уникальным среди счетов одного пользователя.
 	 * Если необходимо Название счета (Псевдоним) сделать публичным, то в элементе attribute для поля alias следует передать элемент published со значение true.
+	 * interfacetype. Тип интерфейса.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Тестовый режим (true|false).
+	 * paymentsystem_limitids. Список платежных систем.
+	 * paymentsystem_unitid. Платежная система по умолчанию.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP метод для PayUrl, CheckUrl (GET | POST).
+	 * issignaturemandatory. Подпись формы оплаты обязательна (true|false).
+	 * redefinesettingsinurl. Можно переопределять настройки в url (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (возврат для iframe). Возможные значения: _blank, _self, _top, _parent.
 	 * Account properties.
 	 * Information about an account contains a list of key-value pairs. Valid keys for account are:
 	 * alias. Account alias. Specify a unique name among the other accounts of the specified user.
+	 * interfacetype. Interface type.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Test mode (true|false).
+	 * paymentsystem_limitids. Payment method IDs.
+	 * paymentsystem_unitid. Default payment method.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP method for PayUrl, CheckUrl (GET | POST).
+	 * issignaturemandatory. Mandatory payment form signature (true|false).
+	 * redefinesettingsinurl. Settings can be redefined in URL (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (redirect in iframe). Available values: _blank, _self, _top, _parent.
 	 * 
 	 *
 	 * @param KeyValueAttribute

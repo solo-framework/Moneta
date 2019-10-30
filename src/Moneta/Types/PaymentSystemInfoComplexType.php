@@ -15,7 +15,7 @@ class PaymentSystemInfoComplexType
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ.
+	 * ID пользователя в системе MONETA.RU.
 	 * Unique identifier of the user in MONETA.RU.
 	 * 
 	 *

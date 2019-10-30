@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Запрос возможности провести операцию в системе МОНЕТА.РУ.
+ * Запрос возможности провести операцию в системе MONETA.RU.
 	 * Transaction verification request.
 	 * 
  */
@@ -15,7 +15,7 @@ class VerifyTransactionRequest extends Entity
 {
 	
 	/**
-	 * Идентификатор операции в системе МОНЕТА.РУ, которую надо проверить.
+	 * Идентификатор операции в системе MONETA.RU, которую надо проверить.
 	 * The unique identifier of transaction which you want to verify.
 	 * 
 	 *

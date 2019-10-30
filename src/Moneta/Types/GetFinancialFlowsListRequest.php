@@ -13,11 +13,11 @@ namespace Moneta\Types;
 	 * If the response contains no data, the size element of the response is set to 0.
 	 * 
  */
-class GetFinancialFlowsListRequest
+class GetFinancialFlowsListRequest extends Entity
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ.
+	 * ID пользователя в системе MONETA.RU.
 	 * Если это поле не задано, то используется текущий пользователь.
 	 * Unique identifier of a user in MONETA.RU.
 	 * If you omit this element, MONETA.RU sets the value of this element to the user who sends the request

@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Запрос на редактирование данных пользователя в системе МОНЕТА.РУ.
+ * Запрос на редактирование данных пользователя в системе MONETA.RU.
 	 * Request for editing a MONETA.RU user profile.
 	 * 
  */
@@ -15,7 +15,7 @@ class EditProfileRequest
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ, данные которого надо отредактировать.
+	 * ID пользователя в системе MONETA.RU, данные которого надо отредактировать.
 	 * The unique identifier of the MONETA.RU user that you want to edit.
 	 * 
 	 *

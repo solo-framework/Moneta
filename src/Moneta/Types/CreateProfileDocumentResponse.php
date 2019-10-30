@@ -15,7 +15,7 @@ class CreateProfileDocumentResponse
 {
 	
 	/**
-	 * Идентификатор документа в системе МОНЕТА.РУ.
+	 * Идентификатор документа в системе MONETA.RU.
 	 * Unique identifier of the document in MONETA.RU.
 	 * 
 	 *

@@ -253,6 +253,19 @@ class MonetaWebServiceConnector
 	/**
 	 * 
 	 *
+	 * @param \Moneta\Types\ChargebackRequest $request
+	 *
+	 * @return \Moneta\Types\ChargebackResponse
+	 */
+	public function Chargeback(\Moneta\Types\ChargebackRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
 	 * @param \Moneta\Types\ForecastTransactionRequest $request
 	 *
 	 * @return \Moneta\Types\ForecastTransactionResponse
@@ -401,6 +414,32 @@ class MonetaWebServiceConnector
 	 * @return \Moneta\Types\EditAccountResponse
 	 */
 	public function EditAccount(\Moneta\Types\EditAccountRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
+	 * @param \Moneta\Types\BlockAccountRequest $request
+	 *
+	 * @return \Moneta\Types\BlockAccountResponse
+	 */
+	public function BlockAccount(\Moneta\Types\BlockAccountRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
+	 * @param \Moneta\Types\UnblockAccountRequest $request
+	 *
+	 * @return \Moneta\Types\UnblockAccountResponse
+	 */
+	public function UnblockAccount(\Moneta\Types\UnblockAccountRequest $request)
 	{
 		$request = array($request);
 		return $this->call(__FUNCTION__, $request);
@@ -799,6 +838,19 @@ class MonetaWebServiceConnector
 	/**
 	 * 
 	 *
+	 * @param \Moneta\Types\AccessTokenListRequest $request
+	 *
+	 * @return \Moneta\Types\AccessTokenListResponse
+	 */
+	public function AccessTokenList(\Moneta\Types\AccessTokenListRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
 	 * @param \Moneta\Types\ApprovePhoneSendConfirmationRequest $request
 	 *
 	 * @return \Moneta\Types\ApprovePhoneSendConfirmationResponse
@@ -843,6 +895,19 @@ class MonetaWebServiceConnector
 	 * @return \Moneta\Types\SecureDataResponse
 	 */
 	public function SecureData(\Moneta\Types\SecureDataRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
+	 * @param \Moneta\Types\SecureDataStatusRequest $request
+	 *
+	 * @return \Moneta\Types\SecureDataStatusResponse
+	 */
+	public function SecureDataStatus(\Moneta\Types\SecureDataStatusRequest $request)
 	{
 		$request = array($request);
 		return $this->call(__FUNCTION__, $request);
@@ -908,6 +973,19 @@ class MonetaWebServiceConnector
 	 * @return \Moneta\Types\AsyncResponse
 	 */
 	public function Async(\Moneta\Types\AsyncRequest $request)
+	{
+		$request = array($request);
+		return $this->call(__FUNCTION__, $request);
+	}
+
+	/**
+	 * 
+	 *
+	 * @param \Moneta\Types\PingRequest $request
+	 *
+	 * @return \Moneta\Types\PingResponse
+	 */
+	public function Ping(\Moneta\Types\PingRequest $request)
 	{
 		$request = array($request);
 		return $this->call(__FUNCTION__, $request);

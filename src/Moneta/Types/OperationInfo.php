@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Тип, описывающий операцию в системе МОНЕТА.РУ. Он представляет собой номер (id) операции и набор полей, которые присутствуют у данной операции. Поля представлены в виде "ключ-значение".
+ * Тип, описывающий операцию в системе MONETA.RU. Он представляет собой номер (id) операции и набор полей, которые присутствуют у данной операции. Поля представлены в виде "ключ-значение".
 	 * Provides information about a MONETA.RU transaction. The information includes a transaction ID and transaction attributes in the form of key-value pairs.
 	 * 
  */
@@ -25,7 +25,7 @@ class OperationInfo
 
 	/**
 	 * Поля операции. Полей в операции может быть 0 и более. Список полей:
-	 * clienttransaction. Внешний (не в системе МОНЕТА.РУ) номер операции.
+	 * clienttransaction. Внешний (не в системе MONETA.RU) номер операции.
 	 * statusid. Статус операции.
 	 * typeid. Тип операции:
 	 * 2,10. Оплата с пользовательского счета.
@@ -46,6 +46,7 @@ class OperationInfo
 	 * sourceamount. Сумма по операции.
 	 * sourceamountfee. Сумма комиссии.
 	 * sourceamounttotal. Общая сумма с учетом комиссии.
+	 * sourceaccounttotal. Сумма, на которую изменился баланс счета.
 	 * targetaccountid. Корреспондентский счет.
 	 * targetalias. Название корреспондентского счета.
 	 * isreversed.
@@ -76,6 +77,7 @@ class OperationInfo
 	 * sourceamount. Transaction amount.
 	 * sourceamountfee. Transaction fee.
 	 * sourceamounttotal. Total transaction amount including the transaction fee.
+	 * sourceaccounttotal. Account balance changes.
 	 * targetaccountid. Correspondent account number.
 	 * targetalias. Alias of the correspondent account.
 	 * isreversed. Indicates whether sourceaccountid and targetaccountid are associated with the payer and payee or vice versa.
@@ -93,7 +95,7 @@ class OperationInfo
 
 	/**
 	 * Поля операции. Полей в операции может быть 0 и более. Список полей:
-	 * clienttransaction. Внешний (не в системе МОНЕТА.РУ) номер операции.
+	 * clienttransaction. Внешний (не в системе MONETA.RU) номер операции.
 	 * statusid. Статус операции.
 	 * typeid. Тип операции:
 	 * 2,10. Оплата с пользовательского счета.
@@ -114,6 +116,7 @@ class OperationInfo
 	 * sourceamount. Сумма по операции.
 	 * sourceamountfee. Сумма комиссии.
 	 * sourceamounttotal. Общая сумма с учетом комиссии.
+	 * sourceaccounttotal. Сумма, на которую изменился баланс счета.
 	 * targetaccountid. Корреспондентский счет.
 	 * targetalias. Название корреспондентского счета.
 	 * isreversed.
@@ -144,6 +147,7 @@ class OperationInfo
 	 * sourceamount. Transaction amount.
 	 * sourceamountfee. Transaction fee.
 	 * sourceamounttotal. Total transaction amount including the transaction fee.
+	 * sourceaccounttotal. Account balance changes.
 	 * targetaccountid. Correspondent account number.
 	 * targetalias. Alias of the correspondent account.
 	 * isreversed. Indicates whether sourceaccountid and targetaccountid are associated with the payer and payee or vice versa.

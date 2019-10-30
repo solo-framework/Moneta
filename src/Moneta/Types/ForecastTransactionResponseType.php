@@ -51,6 +51,17 @@ class ForecastTransactionResponseType
 	 public $payerFee = null;
 
 	/**
+	 * Сумма, на которую изменится счет плательщика после проведения операции.
+	 * Для чтения этого свойства в запросе необходимо выставлять атрибут version равный или больше VERSION_4.
+	 * Payer's account balance changes.
+	 * MONETA.RU returns this element only if you set the version attribute of your request to VERSION_4.
+	 * 
+	 *
+	 * @var decimal
+	 */
+	 public $payerAccountTotal = null;
+
+	/**
 	 * Номер счета получателя.
 	 * Payee's account number.
 	 * 
@@ -87,6 +98,17 @@ class ForecastTransactionResponseType
 	 public $payeeFee = null;
 
 	/**
+	 * Сумма, на которую изменится счет получателя после проведения операции.
+	 * Для чтения этого свойства в запросе необходимо выставлять атрибут version равный или больше VERSION_4.
+	 * Payee's account balance changes.
+	 * MONETA.RU returns this element only if you set the version attribute of your request to VERSION_4.
+	 * 
+	 *
+	 * @var decimal
+	 */
+	 public $payeeAccountTotal = null;
+
+	/**
 	 * Название счета плательщика.
 	 * Payer's account alias.
 	 * 
@@ -103,5 +125,32 @@ class ForecastTransactionResponseType
 	 * @var string
 	 */
 	 public $payeeAlias = null;
+
+	/**
+	 * Дополнительные атрибуты. Пока не используются.
+	 * Для чтения этого свойства в запросе необходимо выставлять атрибут version равный или больше VERSION_4.
+	 * Additional parameters.
+	 * MONETA.RU returns this element only if you set the version attribute of your request to VERSION_4.
+	 * 
+	 *
+	 * @var KeyValueAttribute
+	 */
+	 public $attribute = null;
+
+	/**
+	 * Дополнительные атрибуты. Пока не используются.
+	 * Для чтения этого свойства в запросе необходимо выставлять атрибут version равный или больше VERSION_4.
+	 * Additional parameters.
+	 * MONETA.RU returns this element only if you set the version attribute of your request to VERSION_4.
+	 * 
+	 *
+	 * @param KeyValueAttribute
+	 *
+	 * @return void
+	 */
+	public function addAttribute(KeyValueAttribute $item)
+	{
+		$this->attribute[] = $item;
+	}
 
 }

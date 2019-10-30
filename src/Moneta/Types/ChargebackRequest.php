@@ -7,16 +7,16 @@
 namespace Moneta\Types;
 
 /**
- * Возврат средств по указанной операции.
-	 * Request for refunding a transaction.
+ * Возвратный платёж по указанной операции.
+	 * Request for chargeback transaction.
 	 * 
  */
-class RefundRequest
+class ChargebackRequest
 {
 	
 	/**
-	 * Номер операции в системе MONETA.RU, по которой необходимо вернуть деньги.
-	 * Unique identifier of the transaction in MONETA.RU that requires a refund.
+	 * Номер операции в системе MONETA.RU, по которой необходимо сделать возвратный платёж.
+	 * Unique identifier of the transaction in MONETA.RU that requires a chargeback.
 	 * 
 	 *
 	 * @var long
@@ -26,8 +26,8 @@ class RefundRequest
 	/**
 	 * Сумма, которую необходимо возвратить.
 	 * Если сумма не указана, то сумма для возврата берется из указанной операции.
-	 * Refund amount that is specified in the payee's currency of the original transaction.
-	 * If the amount element is omitted, MONETA.RU refunds the amount that was specified by the payee in the original transaction.
+	 * Chargeback amount that is specified in the payee's currency of the original transaction.
+	 * If the amount element is omitted, MONETA.RU chargeback the amount that was specified by the payee in the original transaction.
 	 * 
 	 *
 	 * @var decimal

@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Запрос на создание пользователя в системе МОНЕТА.РУ.
+ * Запрос на создание пользователя в системе MONETA.RU.
 	 * Request for creating a MONETA.RU account.
 	 * 
  */
@@ -15,7 +15,7 @@ class CreateProfileRequest
 {
 	
 	/**
-	 * ID родительского пользователя в системе МОНЕТА.РУ, к которому будет принадлежать создаваемый пользователь.
+	 * ID родительского пользователя в системе MONETA.RU, к которому будет принадлежать создаваемый пользователь.
 	 * Если поле не задано, то пользователь будет принадлежать тому пользователю, от имени которого работает web service.
 	 * Unique identifier of the parent MONETA.RU account that will own the new account.
 	 * If you ommit this element, the new account will belong to the the user who sends this request.

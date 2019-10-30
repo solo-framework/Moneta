@@ -7,16 +7,16 @@
 namespace Moneta\Types;
 
 /**
- * Запрос на создание пользователя в системе МОНЕТА.РУ.
-	 * Request for creating a MONETA.RU account.
+ * Запрос на получение состояния профиля организации (атрибуты, которые нужно заполнить) в системе MONETA.RU.
+	 * Request to receive the status of the organization profile (attributes to be filled in) in MONETA.RU.
 	 * 
  */
 class CheckProfileRequest
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ, профиль которого надо проверить.
-	 * The unique identifier of the MONETA.RU user that you want to check.
+	 * ID организации в системе MONETA.RU, профиль которой надо проверить.
+	 * The unique identifier of the MONETA.RU organization that you want to check.
 	 * 
 	 *
 	 * @var long

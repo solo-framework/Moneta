@@ -8,7 +8,7 @@ namespace Moneta\Types;
 
 /**
  * Ответ, который приходит на запрос VerifyPersonificationCodeRequest.
-	 * Если код идентификации можно использовать (то есть, он найден и срок его действия не закончился), то в ответе придут данные пользователя, которые есть в системе Монета.Ру.
+	 * Если код идентификации можно использовать (то есть, он найден и срок его действия не закончился), то в ответе придут данные пользователя, которые есть в системе MONETA.RU.
 	 * Если код идентификации использовать нельзя, то возникнет Exception.
 	 * Response to VerifyPersonificationCodeRequest.
 	 * If the identification code is valid (that is MONETA.RU recognized the code and it is not expired), the response contains user information.

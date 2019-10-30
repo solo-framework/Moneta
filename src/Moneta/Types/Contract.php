@@ -7,20 +7,19 @@
 namespace Moneta\Types;
 
 /**
- * Договор в системе МОНЕТА.РУ. Данные представляются в виде "ключ-значение".
+ * Договор в системе MONETA.RU. Данные представляются в виде "ключ-значение".
 	 * Возможные ключи договора:
 	 * num. Номер договора.
 	 * unitid. ID юнита, у которого создан договор.
 	 * own. true-создан для указанного в запросе юнита, false-создан для родительского юнита.
 	 * unitname. если own=false, то данное поле содержит имя юнита.
 	 * datestart. Дата начала договора.
+	 * datesigned. Дата подписания договора.
 	 * datestop. Дата окончания договора.
-	 * status. Статус договора:
-	 * CREATED. Сформирован.
-	 * SIGNED. Подписан.
-	 * ACTIVE. Активный.
-	 * PAUSED. Приостановлен.
-	 * INACTIVE. Расторгнут.
+	 * status. Финансовое состояние договора:
+	 * ACTIVE. Приём платежей доступен.
+	 * RESTRICTED. Приём платежей ограничен.
+	 * INACTIVE. Приём платежей невозможен.
 	 * type. Тип договора:
 	 * PARTNER. Договор.
 	 * VIRTUAL. Виртуальный договор.
@@ -33,12 +32,11 @@ namespace Moneta\Types;
 	 * false. The contract is created for the parent account.
 	 * unitname. The name of the parent account, if the own element is set to false.
 	 * datestart. The start date of the contract.
+	 * datesigned. Contract signing date.
 	 * datestop. The end date of the contract.
 	 * status. Contract status. Valid values are:
-	 * CREATED
-	 * SIGNED
 	 * ACTIVE
-	 * PAUSED
+	 * RESTRICTED
 	 * INACTIVE
 	 * type. Contract type. Valid values are:
 	 * PARTNER. Partner contract.

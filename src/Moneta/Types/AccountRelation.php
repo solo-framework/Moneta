@@ -15,7 +15,7 @@ class AccountRelation
 {
 	
 	/**
-	 * Номер счета в системе МОНЕТА.РУ.
+	 * Номер счета в системе MONETA.RU.
 	 * MONETA.RU account number.
 	 * 
 	 *

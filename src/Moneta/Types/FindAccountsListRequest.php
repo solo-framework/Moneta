@@ -57,4 +57,13 @@ class FindAccountsListRequest extends Entity
 	 */
 	 public $isDelegatedAccount = null;
 
+	/**
+	 * Если значение равно true, в ответе (в элементе attribute) вернутся поля bankAccountForCredits и bankAccountForDebits.
+	 * If showBankAccount is true, response will have elements bankAccountForCredits and bankAccountForDebits.
+	 * 
+	 *
+	 * @var boolean
+	 */
+	 public $showBankAccount = null;
+
 }

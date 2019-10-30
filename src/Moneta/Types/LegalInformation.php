@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Юридические реквизиты в системе МОНЕТА.РУ. Данные представляются в виде "ключ-значение".
+ * Юридические реквизиты в системе MONETA.RU. Данные представляются в виде "ключ-значение".
 	 * Возможные ключи:
 	 * inn. ИНН.
 	 * kpp. КПП.
@@ -15,6 +15,7 @@ namespace Moneta\Types;
 	 * ogrnip. ОГРНИП.
 	 * okpo. ОКПО.
 	 * okved. ОКВЭД.
+	 * okato. OKATO.
 	 * Legal information in the list of key-value pairs.
 	 * Valid keys are:
 	 * inn. Tax Reference Number.
@@ -23,6 +24,7 @@ namespace Moneta\Types;
 	 * ogrnip. Primary State Registration Number of the Sole Proprietor.
 	 * okpo. Russian National Nomenclature of Businesses and Organizations.
 	 * okved. Russian National Classifier of Economic Activities.
+	 * okato. Russian National Classifier of Administrative and Territorial Objects.
 	 * 
  */
 class LegalInformation

@@ -48,6 +48,15 @@ class EditAccountRequest
 	 public $paymentPassword = null;
 
 	/**
+	 * Включить/выключить срок действия платежного пароля. Это поле используется, если в запросе пришел элемент paymentPassword.
+	 * Switch on/off payment password expiration date.
+	 * 
+	 *
+	 * @var boolean
+	 */
+	 public $paymentPasswordExpirationDate = null;
+
+	/**
 	 * Текущий платежный пароль.
 	 * Для того чтобы изменить платежный пароль на новый, необходимо указать текущий платежный пароль.
 	 * Current payment password.
@@ -143,13 +152,53 @@ class EditAccountRequest
 	 public $onCancelledCreditUrl = null;
 
 	/**
+	 * URL после авторизации средств.
+	 * Specifies the URL of the script that MONETA.RU calls after authorising the payer's account.
+	 * 
+	 *
+	 * @var string
+	 */
+	 public $onAuthoriseUrl = null;
+
+	/**
 	 * Свойства счета.
 	 * Данные представляются в виде "ключ-значение". Возможные ключи:
 	 * alias. Название счета. Название счета должно быть уникальным среди счетов одного пользователя.
 	 * Если необходимо Название счета (Псевдоним) сделать публичным, то в элементе attribute для поля alias следует передать элемент published со значение true.
+	 * interfacetype. Тип интерфейса.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Тестовый режим (true|false).
+	 * paymentsystem_limitids. Список платежных систем.
+	 * paymentsystem_unitid. Платежная система по умолчанию.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP метод для PayUrl, CheckUrl (GET | POST).
+	 * issignaturemandatory. Подпись формы оплаты обязательна (true|false).
+	 * redefinesettingsinurl. Можно переопределять настройки в url (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (возврат для iframe). Возможные значения: _blank, _self, _top, _parent.
+	 * Для того чтобы удалить какое-то значение счета, требуется передать key и пустое значение value.
 	 * Account properties.
 	 * Information about an account contains a list of key-value pairs. Valid keys for account are:
 	 * alias. Account alias. Specify a unique name among the other accounts of the specified user.
+	 * interfacetype. Interface type.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Test mode (true|false).
+	 * paymentsystem_limitids. Payment method IDs.
+	 * paymentsystem_unitid. Default payment method.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP method for PayUrl, CheckUrl (GET | POST).
+	 * issignaturemandatory. Mandatory payment form signature (true|false).
+	 * redefinesettingsinurl. Settings can be redefined in URL (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (redirect in iframe). Available values: _blank, _self, _top, _parent.
 	 * 
 	 *
 	 * @var KeyValueAttribute
@@ -161,9 +210,40 @@ class EditAccountRequest
 	 * Данные представляются в виде "ключ-значение". Возможные ключи:
 	 * alias. Название счета. Название счета должно быть уникальным среди счетов одного пользователя.
 	 * Если необходимо Название счета (Псевдоним) сделать публичным, то в элементе attribute для поля alias следует передать элемент published со значение true.
+	 * interfacetype. Тип интерфейса.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Тестовый режим (true|false).
+	 * paymentsystem_limitids. Список платежных систем.
+	 * paymentsystem_unitid. Платежная система по умолчанию.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP метод для PayUrl, CheckUrl (GET | POST).
+	 * issignaturemandatory. Подпись формы оплаты обязательна (true|false).
+	 * redefinesettingsinurl. Можно переопределять настройки в url (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (возврат для iframe). Возможные значения: _blank, _self, _top, _parent.
+	 * Для того чтобы удалить какое-то значение счета, требуется передать key и пустое значение value.
 	 * Account properties.
 	 * Information about an account contains a list of key-value pairs. Valid keys for account are:
 	 * alias. Account alias. Specify a unique name among the other accounts of the specified user.
+	 * interfacetype. Interface type.
+	 * 1 - MONETA.Assistant.
+	 * testmode. Test mode (true|false).
+	 * paymentsystem_limitids. Payment method IDs.
+	 * paymentsystem_unitid. Default payment method.
+	 * checkurl. Check URL.
+	 * payurl. Pay URL.
+	 * httpmethod. HTTP method for PayUrl, CheckUrl (GET | POST).
+	 * issignaturemandatory. Mandatory payment form signature (true|false).
+	 * redefinesettingsinurl. Settings can be redefined in URL (true|false).
+	 * successurl. Success URL.
+	 * failurl. Fail URL.
+	 * inprogressurl. InProgress URL.
+	 * returnurl. Return URL.
+	 * assistantformtarget. Target (redirect in iframe). Available values: _blank, _self, _top, _parent.
 	 * 
 	 *
 	 * @param KeyValueAttribute

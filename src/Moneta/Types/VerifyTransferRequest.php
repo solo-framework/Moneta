@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Запрос возможности провести операцию в системе МОНЕТА.РУ.
+ * Запрос возможности провести операцию в системе MONETA.RU.
 	 * Request for validating a transaction in MONETA.RU.
 	 * 
  */

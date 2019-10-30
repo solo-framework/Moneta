@@ -15,7 +15,7 @@ class FindOperationsListRequestFilter
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ.
+	 * ID пользователя в системе MONETA.RU.
 	 * Unique identifier of the user in MONETA.RU.
 	 * 
 	 *
@@ -51,7 +51,7 @@ class FindOperationsListRequestFilter
 	 public $dateTo = null;
 
 	/**
-	 * Номер операции в системе МОНЕТА.РУ.
+	 * Номер операции в системе MONETA.RU.
 	 * MONETA.RU transaction ID.
 	 * 
 	 *
@@ -91,7 +91,7 @@ class FindOperationsListRequestFilter
 	 public $currencyCode = null;
 
 	/**
-	 * Корреспонденский номер счета в системе МОНЕТА.РУ.
+	 * Корреспонденский номер счета в системе MONETA.RU.
 	 * Correspondent account number in MONETA.RU.
 	 * 
 	 *
@@ -197,6 +197,21 @@ class FindOperationsListRequestFilter
 	 * @var long
 	 */
 	 public $operationCategoryId = null;
+
+	/**
+	 * Операции с типом "Возврат":
+	 * элемент отсутствует - без ограничений;
+	 * true - только возвраты;
+	 * false - кроме возвратов.
+	 * Transactions with "Refund" type:
+	 * no element - without restrictions;
+	 * true - refunds only;
+	 * false - except refunds.
+	 * 
+	 *
+	 * @var boolean
+	 */
+	 public $refund = null;
 
 	/**
 	 * Дата расчетного периода.

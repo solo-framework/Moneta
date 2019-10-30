@@ -33,7 +33,7 @@ class Report
 	 public $name = null;
 
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ.
+	 * ID пользователя в системе MONETA.RU.
 	 * User ID.
 	 * 
 	 *

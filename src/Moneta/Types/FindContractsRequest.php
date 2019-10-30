@@ -15,7 +15,7 @@ class FindContractsRequest extends Entity
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ.
+	 * ID пользователя в системе MONETA.RU.
 	 * Если это поле не задано, то используется текущий пользователь.
 	 * MONETA.RU user ID.
 	 * If you omit this element, MONETA.RU uses the ID of the user who sends the request.

@@ -7,8 +7,9 @@
 namespace Moneta\Types;
 
 /**
- * Запрос на подтверждение сотового телефона пользователя (поле cell_phone объекта tns:Profile).
-	 * Телефон должен быть указан у данного пользователя и неподтвержден.
+ * Запрос на подтверждение (approval=true) или отмену подтверждения (approval=false) сотового телефона пользователя (поле cell_phone объекта tns:Profile).
+	 * В личном кабинете пользователя сотовый телефон должен быть указан обязательно.
+	 * Для подтверждения номера, телефон не должен быть подтвержден в личном кабинете. Для отмены подтверждения номера, телефон должен быть подтвержден в личном кабинете.
 	 * The first request for the confirmation of the user's phone number that is specified in the cell_phone element of tns:Profile.
 	 * Users must confirm their mobile phone numbers in the following cases:
 	 * To receive payment passwords to their mobile phones.
@@ -21,7 +22,20 @@ class ApprovePhoneSendConfirmationRequest
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ. Если это поле не задано, то используется текущий пользователь.
+	 * true. Подтверждение сотового телефона.
+	 * false. Отмена подтверждения сотового телефона.
+	 * Значение по умолчанию равно true.
+	 * true. Cell phone number confirmation.
+	 * false. Cell phone number disapproval.
+	 * Default value is true.
+	 * 
+	 *
+	 * @var boolean
+	 */
+	 public $approval = null;
+
+	/**
+	 * ID пользователя в системе MONETA.RU. Если это поле не задано, то используется текущий пользователь.
 	 * The unique identifier of the MONETA.RU user whose phone number must be confirmed. If you omit this element, MONETA.RU uses the ID of the user who sends the request.
 	 * 
 	 *
@@ -40,10 +54,12 @@ class ApprovePhoneSendConfirmationRequest
 	/**
 	 * Текст sms сообщения, которое отправляется пользователю. Текст должен содержать подстановку {CODE}, которая будет заменена настоящим кодом подтверждения.
 	 * Длина сообщения, если не содержит русских букв - 160 символов, если содержит русские буквы - 70 символов.
-	 * По умолчанию используется - Код подтверждения: {CODE}.
+	 * По умолчанию для подтверждения используется - Код подтверждения: {CODE}.
+	 * По умолчанию для отмены подтверждения используется - Код отмены подтверждения: {CODE}.
 	 * Text of the SMS message to send to the user. The text must contain the {CODE} placeholder that MONETA.RU replaces with a real confirmation code.
 	 * The length of the message that contains non-ASCII characters must not exceed 70 symbols. The length of ASCII messages is limited to 160 symbols.
-	 * Default value: Confirmation code: {CODE}
+	 * Default value for confirmation: Confirmation code: {CODE}
+	 * Default value for disapproval: Disapproval code: {CODE}
 	 * 
 	 *
 	 * @var string

@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Поиск пользователя в системе МОНЕТА.РУ по заданному фильтру.
+ * Поиск пользователя в системе MONETA.RU по заданному фильтру.
 	 * В результате возвратится список пользователей, разбитый на страницы.
 	 * Request for information about a MONETA.RU user profile that matches the specified criteria.
 	 * MONETA.RU returns a list of profiles that might contain multiple pages.

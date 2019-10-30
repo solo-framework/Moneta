@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Ответ на запрос проверки проведения операции в системе МОНЕТА.РУ.
+ * Ответ на запрос проверки проведения операции в системе MONETA.RU.
 	 * Information about the transaction verification.
 	 * 
  */
@@ -15,7 +15,7 @@ class VerifyTransactionResponseType extends VerifyTransferResponseType
 {
 	
 	/**
-	 * Идентификатор операции в системе МОНЕТА.РУ.
+	 * Идентификатор операции в системе MONETA.RU.
 	 * MONETA.RU transaction ID.
 	 * 
 	 *
@@ -24,7 +24,7 @@ class VerifyTransactionResponseType extends VerifyTransferResponseType
 	 public $transactionId = null;
 
 	/**
-	 * Статус операции в системе МОНЕТА.РУ.
+	 * Статус операции в системе MONETA.RU.
 	 * Transaction status in MONETA.RU.
 	 * 
 	 *

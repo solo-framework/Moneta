@@ -68,4 +68,13 @@ class OperationTemplateAmountInfoType
 	 */
 	const CREDIT = 'CREDIT';
 
+	/**
+	 * Сумма к списанию будет равна входящему остатку на Вашем счёте.
+	 * The amount to be debited will equal the opening balance on your account.
+	 * 
+	 *
+	 * @var string
+	 */
+	const OPENING = 'OPENING';
+
 }

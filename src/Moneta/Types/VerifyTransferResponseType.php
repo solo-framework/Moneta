@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Тип, описывающий состояние операции в системе МОНЕТА.РУ.
+ * Тип, описывающий состояние операции в системе MONETA.RU.
 	 * MONETA.RU verification status of a transaction.
 	 * 
  */
@@ -15,7 +15,7 @@ class VerifyTransferResponseType
 {
 	
 	/**
-	 * Если поле равно true, то данная операция может быть проведена в системе МОНЕТА.РУ
+	 * Если поле равно true, то данная операция может быть проведена в системе MONETA.RU
 	 * If this element is set to true, MONETA.RU can process the specified transaction.
 	 * 
 	 *

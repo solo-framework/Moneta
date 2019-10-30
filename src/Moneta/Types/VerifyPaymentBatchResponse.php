@@ -7,7 +7,7 @@
 namespace Moneta\Types;
 
 /**
- * Ответ на запрос проверки проведения операции в системе МОНЕТА.РУ. Ответ в пакетном режиме.
+ * Ответ на запрос проверки проведения операции в системе MONETA.RU. Ответ в пакетном режиме.
 	 * Response to a transaction validation request. Response in batch mode.
 	 * 
  */

@@ -15,7 +15,7 @@ class FindProfileInfoByAccountIdResponse
 {
 	
 	/**
-	 * Номер счета пользователя в системе МОНЕТА.РУ.
+	 * Номер счета пользователя в системе MONETA.RU.
 	 * MONETA.RU account number.
 	 * 
 	 *
@@ -33,7 +33,7 @@ class FindProfileInfoByAccountIdResponse
 	 public $currency = null;
 
 	/**
-	 * Данные пользователя в системе МОНЕТА.РУ.
+	 * Данные пользователя в системе MONETA.RU.
 	 * Information about a MONETA.RU user profile.
 	 * 
 	 *

@@ -13,12 +13,16 @@ namespace Moneta\Types;
 	 * Имя
 	 * Отчество
 	 * Сотовый телефон
-	 * СНИЛС
+	 * Дата рождения (необязательно)
+	 * СНИЛС (необязательно)
 	 * ИНН (необязательно)
 	 * Паспорт РФ (в разделе Документы)
 	 * Упрощённая идентификация доступна только для граждан России. Поэтому, если в личном кабинете указана страна, то это должна быть Россия.
 	 * Сотовый телефон в личном кабинете пользователя должен быть "подтвержден". Если он не подтвержден, то в ответе будет ошибка с кодом "500.7.5".
 	 * Для подтверждения сотового телефона следует использовать запросы ApprovePhoneSendConfirmationRequest и ApprovePhoneApplyCodeRequest.
+	 * Для прохождения упрощенной идентификации необходимо знать либо ИНН, либо СНИЛС (можно указать оба поля).
+	 * Если ИНН и СНИЛС неизвестны, то можно указать Дату рождения пользователя. Используя Дату рождения пользователя, мы сможем получить ИНН пользователя,
+	 * который будет использован для прохождения упрощенной идентификации.
 	 * Если в личном кабинете пользователя все необходимые данные уже заполнены
 	 * (например, запросами EditProfileRequest, CreateProfileDocumentRequest или EditProfileDocumentRequest), и сотовый телефон подтвержден,
 	 * то в данном запросе элемент personalInformation можно не присылать.
@@ -31,7 +35,7 @@ class SimplifiedIdentificationRequest extends AbstractAttributeObject
 {
 	
 	/**
-	 * ID пользователя в системе МОНЕТА.РУ. Если это поле не задано, то используется текущий пользователь.
+	 * ID пользователя в системе MONETA.RU. Если это поле не задано, то используется текущий пользователь.
 	 * User ID. If you omit this element, MONETA.RU uses the ID of the user who sends the request.
 	 * 
 	 *
@@ -45,7 +49,8 @@ class SimplifiedIdentificationRequest extends AbstractAttributeObject
 	 * middle_initial_name
 	 * last_name
 	 * cell_phone
-	 * snils
+	 * date_of_birth (optional)
+	 * snils (optional)
 	 * inn (optional)
 	 * В document должны быть заполнены следующие поля:
 	 * type (всегда равен PASSPORT)
@@ -59,7 +64,8 @@ class SimplifiedIdentificationRequest extends AbstractAttributeObject
 	 * middle_initial_name
 	 * last_name
 	 * cell_phone
-	 * snils
+	 * date_of_birth (optional)
+	 * snils (optional)
 	 * inn (optional)
 	 * The document must contain the following attributes:
 	 * type (PASSPORT)
