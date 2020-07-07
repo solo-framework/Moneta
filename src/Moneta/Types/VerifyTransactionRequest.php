@@ -98,13 +98,4 @@ class VerifyTransactionRequest extends Entity
 	 */
 	 public $clientTransaction = null;
 
-	/**
-	 * Персональные данные пользователя.
-	 * Personal information about the customer.
-	 * 
-	 *
-	 * @var PersonalInformation
-	 */
-	 public $personalInformation = null;
-
 }

@@ -11,5 +11,43 @@ namespace Moneta\Types;
  */
 class AsyncResponse
 {
-	
+	/**
+	 * @var GetTurnoverListResponse $GetTurnoverListResponse
+	 */
+	protected $GetTurnoverListResponse = null;
+
+	/**
+	 * @var GetFinancialFlowsListResponse $GetFinancialFlowsListResponse
+	 */
+	protected $GetFinancialFlowsListResponse = null;
+
+	/**
+	 * @var SimplifiedIdentificationResponse $SimplifiedIdentificationResponse
+	 */
+	protected $SimplifiedIdentificationResponse = null;
+
+	/**
+	 * @var PingResponse $PingResponse
+	 */
+	protected $PingResponse = null;
+
+	/**
+	 * @var PaymentResponse $PaymentResponse
+	 */
+	protected $PaymentResponse = null;
+
+	/**
+	 * @var int $asyncId
+	 */
+	protected $asyncId = null;
+
+	/**
+	 * @var AsyncStatus $asyncStatus
+	 */
+	protected $asyncStatus = null;
+
+	/**
+	 * @var \DateTime $expirationDate
+	 */
+	protected $expirationDate = null;
 }

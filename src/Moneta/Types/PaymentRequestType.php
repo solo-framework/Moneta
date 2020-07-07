@@ -113,13 +113,4 @@ class PaymentRequestType extends Entity
 	 */
 	 public $paymentPasswordChallenge = null;
 
-	/**
-	 * Персональные данные пользователя.
-	 * Personal information about the user.
-	 * 
-	 *
-	 * @var PersonalInformation
-	 */
-	 public $personalInformation = null;
-
 }

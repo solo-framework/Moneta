@@ -11,5 +11,38 @@ namespace Moneta\Types;
  */
 class AsyncRequest
 {
-	
+	/**
+	 * @var GetTurnoverListRequest $GetTurnoverListRequest
+	 */
+	protected $GetTurnoverListRequest = null;
+
+	/**
+	 * @var GetFinancialFlowsListRequest $GetFinancialFlowsListRequest
+	 */
+	protected $GetFinancialFlowsListRequest = null;
+
+	/**
+	 * @var SimplifiedIdentificationRequest $SimplifiedIdentificationRequest
+	 */
+	protected $SimplifiedIdentificationRequest = null;
+
+	/**
+	 * @var PingRequest $PingRequest
+	 */
+	protected $PingRequest = null;
+
+	/**
+	 * @var PaymentRequest $PaymentRequest
+	 */
+	protected $PaymentRequest = null;
+
+	/**
+	 * @var string $callbackUrl
+	 */
+	protected $callbackUrl = null;
+
+	/**
+	 * @var int $asyncId
+	 */
+	protected $asyncId = null;
 }

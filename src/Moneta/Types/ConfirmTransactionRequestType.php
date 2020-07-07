@@ -98,13 +98,4 @@ class ConfirmTransactionRequestType
 	 */
 	 public $clientTransaction = null;
 
-	/**
-	 * Персональные данные пользователя.
-	 * Personal information.
-	 * 
-	 *
-	 * @var PersonalInformation
-	 */
-	 public $personalInformation = null;
-
 }

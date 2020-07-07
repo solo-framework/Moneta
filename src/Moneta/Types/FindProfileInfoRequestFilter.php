@@ -57,6 +57,32 @@ class FindProfileInfoRequestFilter
 	 public $email = null;
 
 	/**
+	 * Номер телефона, по которому происходит поиск.
+	 * Если поле задано, то оно должно быть не меньше 2-х символов.
+	 * Поиск происходит по прямому совпадению. Для задания маски можно указать спец-символы - "*" или "?".
+	 * The phone number of the user profile that you want to find.
+	 * Minimum length is two characters.
+	 * You can use the following wildcards to specify masks: asterisk (*) and question mark (?).
+	 * 
+	 *
+	 * @var string
+	 */
+	 public $phone = null;
+
+	/**
+	 * Имя пользователя (логин), по которому происходит поиск.
+	 * Если поле задано, то оно должно быть не меньше 2-х символов.
+	 * Поиск происходит по прямому совпадению. Для задания маски можно указать спец-символы - "*" или "?".
+	 * The username (login) that you want to find.
+	 * Minimum length is two characters.
+	 * You can use the following wildcards to specify masks: asterisk (*) and question mark (?).
+	 * 
+	 *
+	 * @var string
+	 */
+	 public $login = null;
+
+	/**
 	 * Возвращаются пользователи у которых есть счета с балансом большим или равным указанному значению.
 	 * Specifies the minimum balance of the account that you want to find.
 	 * 
