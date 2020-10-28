@@ -37,6 +37,16 @@ class AsyncRequest
 	public $PaymentRequest = null;
 
 	/**
+	 * @var VerifyPaymentRequest $VerifyPaymentRequest
+	 */
+	public $VerifyPaymentRequest = null;
+
+	/**
+	 * @var VerifyPaymentBatchRequest $VerifyPaymentBatchRequest
+	 */
+	public $VerifyPaymentBatchRequest = null;
+
+	/**
 	 * @var string $callbackUrl
 	 */
 	public $callbackUrl = null;

@@ -37,6 +37,16 @@ class AsyncResponse
 	public $PaymentResponse = null;
 
 	/**
+	 * @var VerifyPaymentResponse $VerifyPaymentResponse
+	 */
+	public $VerifyPaymentResponse = null;
+
+	/**
+	 * @var VerifyPaymentBatchResponse $VerifyPaymentBatchResponse
+	 */
+	public $VerifyPaymentBatchResponse = null;
+
+	/**
 	 * @var int $asyncId
 	 */
 	public $asyncId = null;
